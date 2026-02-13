@@ -1,0 +1,2 @@
+This directory is for static assets (images, icons, etc.)
+Assets will be added by coding agents during implementation.

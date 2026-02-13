@@ -1,0 +1,129 @@
+[   10402ms] [WARNING] [JavaScript Warning: "The resource at “http://localhost:3000/_next/static/media/e4af272ccee01ff0-s.p.woff2” preloaded with link preload was not used within a few seconds. Make sure all attributes of the preload tag are set correctly." {file: "http://localhost:3000/dashboard/settings" line: 0}] @ http://localhost:3000/dashboard/settings:0
+[   21026ms] [ERROR] ./src/app/dashboard/messages/page.tsx
+Error: 
+  x Unexpected token `div`. Expected jsx identifier
+     ,-[/Users/juan/Proyectos/autoforge/dashboard/src/app/dashboard/messages/page.tsx:122:1]
+ 122 |   ).length;
+ 123 | 
+ 124 |   return (
+ 125 |     <div className="p-4 sm:p-6">
+     :      ^^^
+ 126 |       {/* Page header */}
+ 127 |       <div className="mb-4 sm:mb-6">
+ 128 |         <h1 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-100">
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/dashboard/messages/page.tsx @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
+[   21091ms] [ERROR] ./src/app/dashboard/messages/page.tsx
+Error: 
+  x Unexpected token `div`. Expected jsx identifier
+     ,-[/Users/juan/Proyectos/autoforge/dashboard/src/app/dashboard/messages/page.tsx:122:1]
+ 122 |   ).length;
+ 123 | 
+ 124 |   return (
+ 125 |     <div className="p-4 sm:p-6">
+     :      ^^^
+ 126 |       {/* Page header */}
+ 127 |       <div className="mb-4 sm:mb-6">
+ 128 |         <h1 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-100">
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/dashboard/messages/page.tsx @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
+[   22222ms] [ERROR] ./src/app/dashboard/messages/page.tsx
+Error: 
+  x Unexpected token `div`. Expected jsx identifier
+     ,-[/Users/juan/Proyectos/autoforge/dashboard/src/app/dashboard/messages/page.tsx:122:1]
+ 122 |   ).length;
+ 123 | 
+ 124 |   return (
+ 125 |     <div className="p-4 sm:p-6">
+     :      ^^^
+ 126 |       {/* Page header */}
+ 127 |       <div className="mb-4 sm:mb-6">
+ 128 |         <h1 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-100">
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/dashboard/messages/page.tsx @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
+[   22440ms] [ERROR] ./src/app/dashboard/messages/page.tsx
+Error: 
+  x Unexpected token `div`. Expected jsx identifier
+     ,-[/Users/juan/Proyectos/autoforge/dashboard/src/app/dashboard/messages/page.tsx:122:1]
+ 122 |   ).length;
+ 123 | 
+ 124 |   return (
+ 125 |     <div className="p-4 sm:p-6">
+     :      ^^^
+ 126 |       {/* Page header */}
+ 127 |       <div className="mb-4 sm:mb-6">
+ 128 |         <h1 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-100">
+     `----
+
+Caused by:
+    Syntax Error @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[   22441ms] ModuleBuildError: Module build failed (from ./node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error: 
+  x Unexpected token `div`. Expected jsx identifier
+     ,-[/Users/juan/Proyectos/autoforge/dashboard/src/app/dashboard/messages/page.tsx:122:1]
+ 122 |   ).length;
+ 123 | 
+ 124 |   return (
+ 125 |     <div className="p-4 sm:p-6">
+     :      ^^^
+ 126 |       {/* Page header */}
+ 127 |       <div className="mb-4 sm:mb-6">
+ 128 |         <h1 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-100">
+     `----
+
+
+Caused by:
+    Syntax Error
+    at getServerError (webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/nodeStackFrames.js:38:15)
+    at hydrate/< (webpack-internal:///./node_modules/next/dist/client/index.js:627:27)
+    at setTimeout handler*hydrate (webpack-internal:///./node_modules/next/dist/client/index.js:615:27)
+    at async*pageBootrap (webpack-internal:///./node_modules/next/dist/client/page-bootstrap.js:27:26)
+    at  (webpack-internal:///./node_modules/next/dist/client/next-dev.js:25:43)
+    at promise callback* (webpack-internal:///./node_modules/next/dist/client/next-dev.js:23:4)
+    at ./node_modules/next/dist/client/next-dev.js (http://localhost:3000/_next/static/chunks/fallback/main.js:820:1)
+    at options.factory (http://localhost:3000/_next/static/chunks/fallback/webpack.js:647:31)
+    at __webpack_require__ (http://localhost:3000/_next/static/chunks/fallback/webpack.js:37:33)
+    at __webpack_exec__ (http://localhost:3000/_next/static/chunks/fallback/main.js:1975:61)
+    at  (http://localhost:3000/_next/static/chunks/fallback/main.js:1976:53)
+    at webpackJsonpCallback (http://localhost:3000/_next/static/chunks/fallback/webpack.js:1195:46)
+    at  (http://localhost:3000/_next/static/chunks/fallback/main.js:9:61)
+[   22444ms] [ERROR] ./src/app/dashboard/messages/page.tsx
+Error: 
+  x Unexpected token `div`. Expected jsx identifier
+     ,-[/Users/juan/Proyectos/autoforge/dashboard/src/app/dashboard/messages/page.tsx:122:1]
+ 122 |   ).length;
+ 123 | 
+ 124 |   return (
+ 125 |     <div className="p-4 sm:p-6">
+     :      ^^^
+ 126 |       {/* Page header */}
+ 127 |       <div className="mb-4 sm:mb-6">
+ 128 |         <h1 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-100">
+     `----
+
+Caused by:
+    Syntax Error @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[   24656ms] [WARNING] [Fast Refresh] performing full reload
+
+Fast Refresh will perform a full reload when you edit a file that's imported by modules outside of the React rendering tree.
+You might have a file which exports a React component but also exports a value that is imported by a non-React component file.
+Consider migrating the non-React component export to a separate file and importing it into both files.
+
+It is also possible the parent component of the component you edited is a class component, which disables Fast Refresh.
+Fast Refresh requires at least one parent function component in your React tree. @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:347
+[   34736ms] [WARNING] [JavaScript Warning: "The resource at “http://localhost:3000/_next/static/media/e4af272ccee01ff0-s.p.woff2” preloaded with link preload was not used within a few seconds. Make sure all attributes of the preload tag are set correctly." {file: "http://localhost:3000/dashboard/settings" line: 0}] @ http://localhost:3000/dashboard/settings:0

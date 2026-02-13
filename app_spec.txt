@@ -1,0 +1,458 @@
+<project_specification>
+  <project_name>DashBoard Pro</project_name>
+
+  <overview>
+    A premium, modern and elegant dashboard template designed for sale on ThemeForest. It features public authentication pages (login, register, forgot password) and a private dashboard area with custom UI components, data visualizations, and multiple functional pages. Built with Next.js and Tailwind CSS, all data is mocked — there is no backend. The template targets developers and businesses looking for a production-ready admin dashboard starting point.
+  </overview>
+
+  <technology_stack>
+    <frontend>
+      <framework>Next.js 14+ (App Router)</framework>
+      <styling>Tailwind CSS 3.4+</styling>
+      <language>TypeScript</language>
+      <charts>Recharts</charts>
+      <icons>Lucide React</icons>
+      <drag_and_drop>@dnd-kit/core + @dnd-kit/sortable</drag_and_drop>
+      <date_handling>date-fns</date_handling>
+      <typography>Inter (Google Fonts)</typography>
+      <animations>Framer Motion (subtle transitions)</animations>
+    </frontend>
+    <backend>
+      <runtime>None — stateless template with mock data</runtime>
+      <database>none - stateless application</database>
+    </backend>
+    <communication>
+      <api>No real API — all data is provided via local mock data files and React context/state</api>
+    </communication>
+  </technology_stack>
+
+  <prerequisites>
+    <environment_setup>
+      - Node.js 18+ and npm/pnpm
+      - Next.js project initialized with App Router
+      - Tailwind CSS configured
+      - TypeScript configured
+    </environment_setup>
+  </prerequisites>
+
+  <feature_count>128</feature_count>
+
+  <stateless_template_note>
+    This is a frontend-only template with NO backend, NO database, and NO real API.
+    All data is mocked using local JSON/TS files and React state/context.
+    Authentication is simulated (no real auth provider).
+    Infrastructure database features (indices 0-4) are replaced with template-specific foundation features.
+  </stateless_template_note>
+
+  <security_and_access_control>
+    <user_roles>
+      <role name="guest">
+        <permissions>
+          - Can access public pages (login, register, forgot password, 404)
+          - Cannot access dashboard or private pages
+          - Redirected to login when attempting to access private routes
+        </permissions>
+        <protected_routes>
+          - /dashboard/* (redirects to /login)
+        </protected_routes>
+      </role>
+      <role name="authenticated_user">
+        <permissions>
+          - Can access all dashboard pages
+          - Can view and interact with all components
+          - Can toggle dark/light mode
+          - Can update profile settings
+        </permissions>
+        <protected_routes>
+          - /login, /register (redirects to /dashboard if already logged in)
+        </protected_routes>
+      </role>
+    </user_roles>
+    <authentication>
+      <method>Simulated email/password login with mock credentials + social login buttons (UI only)</method>
+      <session_timeout>Simulated via localStorage/context</session_timeout>
+      <password_requirements>Visual validation only (min 8 chars, shown in UI)</password_requirements>
+    </authentication>
+    <sensitive_operations>
+      - Logout confirmation (optional)
+    </sensitive_operations>
+  </security_and_access_control>
+
+  <core_features>
+    <auth_pages>
+      - Login page with two-column layout (form + decorative illustration/gradient)
+      - Email and password input fields with validation
+      - "Remember me" checkbox
+      - Google and GitHub social login buttons (UI only, no real auth)
+      - Link to register and forgot password pages
+      - Register page with name, email, password, confirm password fields
+      - Register form validation (matching passwords, email format, required fields)
+      - Forgot password page with email input and success message
+    </auth_pages>
+
+    <layout_and_navigation>
+      - Collapsible sidebar with icon-only mode and full mode
+      - Sidebar with hierarchical navigation (sections with sub-items)
+      - Active route highlighting in sidebar
+      - Top header bar with global search input
+      - Notification bell icon with dropdown showing recent notifications (mock)
+      - User avatar in header with dropdown menu (profile, settings, logout)
+      - Breadcrumb navigation on all pages
+      - Dark mode / Light mode toggle with smooth transition
+      - Fully responsive layout (desktop 1920px, tablet 768px, mobile 375px)
+      - Mobile hamburger menu for sidebar
+    </layout_and_navigation>
+
+    <dashboard_home>
+      - 4 stat cards at the top: Revenue, Users, Orders, Conversion Rate
+      - Each stat card shows value, percentage change indicator (up/down arrow with color)
+      - Area/line chart showing revenue over time
+      - Time period filter for revenue chart (7d, 30d, 90d, 1y)
+      - Bar chart showing sales by category or by month
+      - Donut/pie chart showing traffic distribution by source
+      - Recent transactions table with columns: name, amount, status, date
+      - Activity feed / timeline showing recent system events
+      - All charts responsive and adapt to container width
+      - Hover tooltips on chart data points
+      - Chart legend with toggle visibility per series
+      - Smooth animations on chart render
+    </dashboard_home>
+
+    <analytics_page>
+      - Page visits line chart with multi-period comparison
+      - Sessions and unique visitors stats
+      - Bounce rate metric with trend indicator
+      - Geographic map visualization showing user distribution by country
+      - Device breakdown chart (desktop, mobile, tablet percentages)
+      - Top pages table with views, unique views, avg time
+      - Traffic sources breakdown (organic, direct, referral, social)
+      - Date range picker filter for all analytics data
+      - Real-time visitors counter (simulated)
+      - Comparison toggle (this period vs previous period)
+    </analytics_page>
+
+    <users_page>
+      - Users table with columns: avatar, name, email, role, status, joined date
+      - Search input to filter users by name or email
+      - Filter dropdown by role and status
+      - Sortable columns (name, joined date, role)
+      - Pagination controls (prev, next, page numbers)
+      - Row actions: view detail, edit, delete
+      - User detail modal/drawer showing full profile
+      - Add new user button with form modal
+      - Bulk selection with checkboxes
+      - Bulk action toolbar (delete selected, export selected)
+    </users_page>
+
+    <products_page>
+      - Products displayed in table view by default
+      - Toggle between table view and grid/card view
+      - Grid view shows product image, name, price, stock status
+      - Table view columns: image thumbnail, name, category, price, stock, status
+      - Search products by name
+      - Filter by category dropdown
+      - Filter by stock status (in stock, low stock, out of stock)
+      - Sort by name, price, stock
+      - Pagination controls
+      - Product detail view/modal with full information
+      - Add new product button with form
+      - Edit and delete actions per product
+    </products_page>
+
+    <orders_page>
+      - Orders table with columns: order ID, customer, items count, total, status, date
+      - Status badges with colors (pending=yellow, processing=blue, shipped=purple, delivered=green, cancelled=red)
+      - Filter by order status
+      - Search by order ID or customer name
+      - Date range filter
+      - Pagination
+      - Order detail expandable row or modal showing items, shipping info, timeline
+      - Export orders button (UI only)
+    </orders_page>
+
+    <messages_inbox>
+      - Two-panel layout: message list on left, reading pane on right
+      - Message list items with sender avatar, name, subject, preview, timestamp
+      - Unread/read visual distinction (bold text, dot indicator)
+      - Click message to view full content in reading pane
+      - Reply button with text area (UI only)
+      - Star/favorite messages
+      - Search messages by sender or subject
+      - Delete message action
+    </messages_inbox>
+
+    <calendar_page>
+      - Monthly calendar grid view
+      - Navigate between months (prev/next arrows)
+      - Today button to return to current date
+      - Events displayed as colored dots or bars on dates
+      - Click date to view/create events
+      - Event creation modal with title, date, time, color picker
+      - Edit existing events
+      - Delete events
+      - Different event colors by category
+    </calendar_page>
+
+    <kanban_board>
+      - Multiple columns (e.g., To Do, In Progress, Review, Done)
+      - Cards within each column showing title, description preview, assignee avatar, priority badge
+      - Drag and drop cards between columns
+      - Drag and drop to reorder cards within a column
+      - Add new card button per column
+      - Edit card modal with full details
+      - Delete card action
+      - Add new column functionality
+    </kanban_board>
+
+    <settings_page>
+      - Profile section: avatar upload area, name, email, bio fields
+      - Save profile button with success feedback
+      - Notification preferences: toggles for email, push, SMS notifications
+      - Appearance section: theme selector (light/dark/system)
+      - Language selector dropdown (UI only)
+      - Danger zone: delete account button with confirmation modal
+      - Password change section with current/new/confirm fields
+      - Form validation on all settings fields
+    </settings_page>
+
+    <pricing_page>
+      - 3 pricing plan cards (Free, Pro, Enterprise)
+      - Monthly/annual toggle with price update
+      - Feature comparison list per plan
+      - Highlighted/recommended plan
+      - CTA button per plan (Get Started / Contact Sales)
+    </pricing_page>
+
+    <ui_components_showcase>
+      - Buttons: primary, secondary, outline, ghost, danger variants in sm/md/lg sizes
+      - Form inputs: text, email, password, number, textarea with labels and error states
+      - Select dropdowns with search/filter capability
+      - Checkboxes and radio buttons
+      - Toggle switches
+      - Date picker component
+      - Range slider component
+      - Data table with sorting, filtering, pagination
+      - Modal dialog (sm, md, lg sizes)
+      - Slide-over drawer (left/right)
+      - Toast notifications (success, error, warning, info)
+      - Tooltip component
+      - Popover component
+      - Badge and tag components (multiple colors)
+      - Progress bar (determinate and indeterminate)
+      - Spinner/loading component
+      - Breadcrumb component
+      - Tabs component (horizontal)
+      - Accordion/collapsible component
+      - Card variants (basic, with image, with actions, stat card)
+    </ui_components_showcase>
+
+    <error_pages>
+      - 404 page with illustration, message, and "Go Home" button
+      - Generic error page with friendly message and retry/go home actions
+    </error_pages>
+
+    <animations_and_polish>
+      - Page transition animations (fade/slide)
+      - Hover effects on interactive elements (buttons, cards, table rows)
+      - Loading skeleton placeholders on data-heavy pages
+      - Empty state illustrations with helpful messages
+      - Smooth sidebar collapse/expand animation
+      - Chart entrance animations on page load
+    </animations_and_polish>
+  </core_features>
+
+  <mock_data_strategy>
+    <description>
+      All data in this template is mocked using static TypeScript files with typed mock data.
+      No real API calls are made. Data is managed via React Context and local state.
+      Mock data files are organized in a /data or /mocks directory.
+    </description>
+    <mock_data_files>
+      - users.ts — Array of mock user objects (20-30 entries)
+      - products.ts — Array of mock product objects (30-50 entries)
+      - orders.ts — Array of mock order objects (20-40 entries)
+      - messages.ts — Array of mock message/inbox objects (15-25 entries)
+      - analytics.ts — Mock analytics data for charts
+      - transactions.ts — Mock recent transactions
+      - events.ts — Mock calendar events
+      - kanban.ts — Mock kanban board data (columns and cards)
+      - notifications.ts — Mock notification items
+    </mock_data_files>
+  </mock_data_strategy>
+
+  <ui_layout>
+    <main_structure>
+      Two-column layout:
+      - Left: Collapsible sidebar (260px expanded, 72px collapsed) with logo, navigation links grouped by sections, and user info at bottom
+      - Right: Main content area with fixed header (search bar, notifications, user menu) and scrollable content below
+      - On mobile: Sidebar becomes an overlay drawer triggered by hamburger menu
+    </main_structure>
+    <page_layouts>
+      - Auth pages: Centered card on gradient/illustrated background, two-column on desktop
+      - Dashboard/Analytics: Grid of cards and charts, responsive from 3-col to 1-col
+      - Table pages (Users, Products, Orders): Header with search/filters, full-width table, pagination footer
+      - Messages: Two-panel horizontal split (30/70)
+      - Calendar: Full-width monthly grid
+      - Kanban: Horizontal scrollable columns
+      - Settings: Single column centered form with sections
+      - Components: Sectioned showcase with examples and code hints
+    </page_layouts>
+  </ui_layout>
+
+  <design_system>
+    <color_palette>
+      <primary>Indigo-600 (#4F46E5) — primary actions, active states, links</primary>
+      <primary_hover>Indigo-700 (#4338CA)</primary_hover>
+      <secondary>Slate-600 (#475569) — secondary text, icons</secondary>
+      <success>Emerald-500 (#10B981) — positive indicators, completed status</success>
+      <warning>Amber-500 (#F59E0B) — warnings, pending status</warning>
+      <danger>Rose-500 (#F43F5E) — errors, destructive actions, cancelled</danger>
+      <info>Sky-500 (#0EA5E9) — informational, processing status</info>
+      <background_light>White (#FFFFFF) for cards, Gray-50 (#F9FAFB) for page background</background_light>
+      <background_dark>Gray-900 (#111827) for cards, Gray-950 (#030712) for page background</background_dark>
+      <border_light>Gray-200 (#E5E7EB)</border_light>
+      <border_dark>Gray-700 (#374151)</border_dark>
+    </color_palette>
+    <typography>
+      <font_family>Inter (Google Fonts)</font_family>
+      <headings>Font-bold, tracking-tight</headings>
+      <body>Font-normal, text-sm/text-base</body>
+      <small>Text-xs for labels, badges, meta info</small>
+    </typography>
+    <spacing>
+      Consistent use of Tailwind spacing scale (p-4, p-6, gap-4, gap-6).
+      Cards use p-6 internal padding. Page sections use gap-6 between them.
+    </spacing>
+    <border_radius>
+      Cards: rounded-xl. Buttons: rounded-lg. Inputs: rounded-md. Badges: rounded-full.
+    </border_radius>
+    <shadows>
+      Cards: shadow-sm (light mode), shadow-none with border (dark mode).
+      Modals: shadow-xl. Dropdowns: shadow-lg.
+    </shadows>
+  </design_system>
+
+  <implementation_steps>
+    <step number="1">
+      <title>Project Setup & Foundation</title>
+      <tasks>
+        - Initialize Next.js 14 project with App Router and TypeScript
+        - Configure Tailwind CSS with custom theme (colors, fonts)
+        - Set up project directory structure (app/, components/, data/, lib/, types/)
+        - Install dependencies (recharts, lucide-react, framer-motion, @dnd-kit, date-fns)
+        - Create base TypeScript types/interfaces for all data entities
+        - Set up Inter font via next/font
+      </tasks>
+    </step>
+    <step number="2">
+      <title>Layout & Navigation System</title>
+      <tasks>
+        - Build collapsible sidebar component with navigation items
+        - Build top header with search, notifications dropdown, user menu
+        - Implement dark/light mode toggle with context provider
+        - Create responsive layout wrapper (desktop sidebar + mobile drawer)
+        - Build breadcrumb component
+        - Create auth layout (two-column) for public pages
+        - Implement route protection (simulated auth context)
+      </tasks>
+    </step>
+    <step number="3">
+      <title>Auth Pages</title>
+      <tasks>
+        - Build login page with form, validation, social buttons
+        - Build register page with form and validation
+        - Build forgot password page
+        - Implement simulated auth flow (context + localStorage)
+        - Redirect logic (authenticated users away from auth, guests away from dashboard)
+      </tasks>
+    </step>
+    <step number="4">
+      <title>Mock Data & Shared Components</title>
+      <tasks>
+        - Create all mock data files with realistic data
+        - Build reusable data table component (sort, filter, paginate)
+        - Build modal and drawer components
+        - Build toast/notification system
+        - Build form input components (text, select, toggle, date picker, slider)
+        - Build card, badge, button, and other base UI components
+      </tasks>
+    </step>
+    <step number="5">
+      <title>Dashboard Home & Analytics</title>
+      <tasks>
+        - Build stat cards component
+        - Implement revenue area/line chart with time filter
+        - Build bar chart for sales by category
+        - Build donut chart for traffic sources
+        - Build recent transactions table
+        - Build activity feed timeline
+        - Build full analytics page with all metrics and charts
+      </tasks>
+    </step>
+    <step number="6">
+      <title>Data Pages (Users, Products, Orders)</title>
+      <tasks>
+        - Build users page with table, search, filters, pagination, CRUD modals
+        - Build products page with table/grid toggle, search, filters, CRUD
+        - Build orders page with status badges, filters, detail view
+      </tasks>
+    </step>
+    <step number="7">
+      <title>Interactive Pages (Messages, Calendar, Kanban)</title>
+      <tasks>
+        - Build messages inbox with two-panel layout
+        - Build calendar with monthly view and event management
+        - Build kanban board with drag and drop
+      </tasks>
+    </step>
+    <step number="8">
+      <title>Settings, Pricing & Component Showcase</title>
+      <tasks>
+        - Build settings page with profile, notifications, appearance sections
+        - Build pricing page with plan cards and monthly/annual toggle
+        - Build UI components showcase page with all component variants
+      </tasks>
+    </step>
+    <step number="9">
+      <title>Error Pages, Animations & Polish</title>
+      <tasks>
+        - Build 404 and error pages
+        - Add page transition animations
+        - Add loading skeletons and empty states
+        - Add hover effects and micro-interactions
+        - Final responsive testing and adjustments
+        - Cross-browser compatibility check
+      </tasks>
+    </step>
+  </implementation_steps>
+
+  <success_criteria>
+    <functionality>
+      - All pages render correctly and are fully navigable
+      - Simulated auth flow works (login redirects to dashboard, logout redirects to login)
+      - All interactive components work (tables sort/filter/paginate, drag and drop works, charts render)
+      - Dark/light mode toggle works across all pages
+      - Forms validate input and show appropriate error/success states
+    </functionality>
+    <user_experience>
+      - Navigation is intuitive and consistent
+      - Loading states and empty states are handled gracefully
+      - Transitions and animations feel smooth and polished
+      - Responsive design works flawlessly on desktop, tablet, and mobile
+    </user_experience>
+    <technical_quality>
+      - Clean, well-organized TypeScript code
+      - Consistent use of Tailwind utility classes (no custom CSS unless necessary)
+      - Reusable component architecture
+      - No console errors or warnings
+      - Fast page load and navigation (no unnecessary re-renders)
+    </technical_quality>
+    <design_polish>
+      - Modern, elegant aesthetic suitable for ThemeForest premium tier
+      - Consistent spacing, colors, and typography throughout
+      - Professional-looking mock data (realistic names, numbers, dates)
+      - Attention to detail in hover states, focus states, and micro-interactions
+      - Dark mode looks intentionally designed, not just color-inverted
+    </design_polish>
+  </success_criteria>
+</project_specification>

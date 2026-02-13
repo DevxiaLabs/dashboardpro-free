@@ -1,0 +1,1 @@
+[    7049ms] [ERROR] Failed to fetch RSC payload for http://localhost:3000/dashboard. Falling back to browser navigation. Error @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32

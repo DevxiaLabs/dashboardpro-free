@@ -1,0 +1,293 @@
+[   10341ms] [WARNING] [JavaScript Warning: "The resource at “http://localhost:3002/_next/static/media/e4af272ccee01ff0-s.p.woff2” preloaded with link preload was not used within a few seconds. Make sure all attributes of the preload tag are set correctly." {file: "http://localhost:3002/dashboard/calendar" line: 0}] @ http://localhost:3002/dashboard/calendar:0
+[   88666ms] [ERROR] ./src/app/dashboard/page.tsx
+Error: 
+  x the name `formatTimeAgo` is defined multiple times
+    ,-[/Users/juan/Proyectos/autoforge/dashboard/src/app/dashboard/page.tsx:21:1]
+ 21 |   Shield,
+ 22 |   Loader2,
+ 23 | } from "lucide-react";
+ 24 | import { cn, formatTimeAgo } from "@/lib/utils";
+    :              ^^^^^^|^^^^^^
+    :                    `-- previous definition of `formatTimeAgo` here
+ 25 | import type { LucideIcon } from "lucide-react";
+ 26 | 
+ 27 | const iconMap: Record<string, LucideIcon> = {
+ 28 |   DollarSign,
+ 29 |   Users,
+ 30 |   ShoppingCart,
+ 31 |   TrendingUp,
+ 32 | };
+ 33 | 
+ 34 | const activityIconMap: Record<string, LucideIcon> = {
+ 35 |   ShoppingCart,
+ 36 |   DollarSign,
+ 37 |   UserPlus,
+ 38 |   Package,
+ 39 |   AlertTriangle,
+ 40 |   XCircle,
+ 41 |   CheckCircle,
+ 42 |   ShoppingBag,
+ 43 |   Star,
+ 44 |   Shield,
+ 45 | };
+ 46 | 
+ 47 | const activityColorMap: Record<string, string> = {
+ 48 |   order: "bg-primary-50 dark:bg-primary-500/10 text-primary-600 dark:text-primary-400",
+ 49 |   user: "bg-success-50 dark:bg-success-500/10 text-success-600 dark:text-success-400",
+ 50 |   product: "bg-warning-50 dark:bg-warning-500/10 text-warning-600 dark:text-warning-400",
+ 51 |   system: "bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400",
+ 52 | };
+ 53 | 
+ 54 | const statusColorMap: Record<string, string> = {
+ 55 |   completed: "bg-success-50 dark:bg-success-500/10 text-success-700 dark:text-success-400",
+ 56 |   pending: "bg-warning-50 dark:bg-warning-500/10 text-warning-700 dark:text-warning-400",
+ 57 |   failed: "bg-danger-50 dark:bg-danger-500/10 text-danger-700 dark:text-danger-400",
+ 58 | };
+ 59 | 
+ 60 | function formatTimeAgo(timestamp: string): string {
+    :          ^^^^^^|^^^^^^
+    :                `-- `formatTimeAgo` redefined here
+ 61 |   const date = new Date(timestamp);
+ 62 |   const now = new Date("2024-05-20T12:00:00Z"); // relative to our data
+ 63 |   const diffMs = now.getTime() - date.getTime();
+    `----
+
+Import trace for requested module:
+./src/app/dashboard/page.tsx @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
+[   88835ms] [ERROR] ./src/app/dashboard/page.tsx
+Error: 
+  x the name `formatTimeAgo` is defined multiple times
+    ,-[/Users/juan/Proyectos/autoforge/dashboard/src/app/dashboard/page.tsx:21:1]
+ 21 |   Shield,
+ 22 |   Loader2,
+ 23 | } from "lucide-react";
+ 24 | import { cn, formatTimeAgo } from "@/lib/utils";
+    :              ^^^^^^|^^^^^^
+    :                    `-- previous definition of `formatTimeAgo` here
+ 25 | import type { LucideIcon } from "lucide-react";
+ 26 | 
+ 27 | const iconMap: Record<string, LucideIcon> = {
+ 28 |   DollarSign,
+ 29 |   Users,
+ 30 |   ShoppingCart,
+ 31 |   TrendingUp,
+ 32 | };
+ 33 | 
+ 34 | const activityIconMap: Record<string, LucideIcon> = {
+ 35 |   ShoppingCart,
+ 36 |   DollarSign,
+ 37 |   UserPlus,
+ 38 |   Package,
+ 39 |   AlertTriangle,
+ 40 |   XCircle,
+ 41 |   CheckCircle,
+ 42 |   ShoppingBag,
+ 43 |   Star,
+ 44 |   Shield,
+ 45 | };
+ 46 | 
+ 47 | const activityColorMap: Record<string, string> = {
+ 48 |   order: "bg-primary-50 dark:bg-primary-500/10 text-primary-600 dark:text-primary-400",
+ 49 |   user: "bg-success-50 dark:bg-success-500/10 text-success-600 dark:text-success-400",
+ 50 |   product: "bg-warning-50 dark:bg-warning-500/10 text-warning-600 dark:text-warning-400",
+ 51 |   system: "bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400",
+ 52 | };
+ 53 | 
+ 54 | const statusColorMap: Record<string, string> = {
+ 55 |   completed: "bg-success-50 dark:bg-success-500/10 text-success-700 dark:text-success-400",
+ 56 |   pending: "bg-warning-50 dark:bg-warning-500/10 text-warning-700 dark:text-warning-400",
+ 57 |   failed: "bg-danger-50 dark:bg-danger-500/10 text-danger-700 dark:text-danger-400",
+ 58 | };
+ 59 | 
+ 60 | function formatTimeAgo(timestamp: string): string {
+    :          ^^^^^^|^^^^^^
+    :                `-- `formatTimeAgo` redefined here
+ 61 |   const date = new Date(timestamp);
+ 62 |   const now = new Date("2024-05-20T12:00:00Z"); // relative to our data
+ 63 |   const diffMs = now.getTime() - date.getTime();
+    `----
+
+Import trace for requested module:
+./src/app/dashboard/page.tsx @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
+[   89486ms] [ERROR] ./src/app/dashboard/page.tsx
+Error: 
+  x the name `formatTimeAgo` is defined multiple times
+    ,-[/Users/juan/Proyectos/autoforge/dashboard/src/app/dashboard/page.tsx:21:1]
+ 21 |   Shield,
+ 22 |   Loader2,
+ 23 | } from "lucide-react";
+ 24 | import { cn, formatTimeAgo } from "@/lib/utils";
+    :              ^^^^^^|^^^^^^
+    :                    `-- previous definition of `formatTimeAgo` here
+ 25 | import type { LucideIcon } from "lucide-react";
+ 26 | 
+ 27 | const iconMap: Record<string, LucideIcon> = {
+ 28 |   DollarSign,
+ 29 |   Users,
+ 30 |   ShoppingCart,
+ 31 |   TrendingUp,
+ 32 | };
+ 33 | 
+ 34 | const activityIconMap: Record<string, LucideIcon> = {
+ 35 |   ShoppingCart,
+ 36 |   DollarSign,
+ 37 |   UserPlus,
+ 38 |   Package,
+ 39 |   AlertTriangle,
+ 40 |   XCircle,
+ 41 |   CheckCircle,
+ 42 |   ShoppingBag,
+ 43 |   Star,
+ 44 |   Shield,
+ 45 | };
+ 46 | 
+ 47 | const activityColorMap: Record<string, string> = {
+ 48 |   order: "bg-primary-50 dark:bg-primary-500/10 text-primary-600 dark:text-primary-400",
+ 49 |   user: "bg-success-50 dark:bg-success-500/10 text-success-600 dark:text-success-400",
+ 50 |   product: "bg-warning-50 dark:bg-warning-500/10 text-warning-600 dark:text-warning-400",
+ 51 |   system: "bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400",
+ 52 | };
+ 53 | 
+ 54 | const statusColorMap: Record<string, string> = {
+ 55 |   completed: "bg-success-50 dark:bg-success-500/10 text-success-700 dark:text-success-400",
+ 56 |   pending: "bg-warning-50 dark:bg-warning-500/10 text-warning-700 dark:text-warning-400",
+ 57 |   failed: "bg-danger-50 dark:bg-danger-500/10 text-danger-700 dark:text-danger-400",
+ 58 | };
+ 59 | 
+ 60 | function formatTimeAgo(timestamp: string): string {
+    :          ^^^^^^|^^^^^^
+    :                `-- `formatTimeAgo` redefined here
+ 61 |   const date = new Date(timestamp);
+ 62 |   const now = new Date("2024-05-20T12:00:00Z"); // relative to our data
+ 63 |   const diffMs = now.getTime() - date.getTime();
+    `----
+
+Import trace for requested module:
+./src/app/dashboard/page.tsx @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
+[   89700ms] [ERROR] ./src/app/dashboard/page.tsx
+Error: 
+  x the name `formatTimeAgo` is defined multiple times
+    ,-[/Users/juan/Proyectos/autoforge/dashboard/src/app/dashboard/page.tsx:21:1]
+ 21 |   Shield,
+ 22 |   Loader2,
+ 23 | } from "lucide-react";
+ 24 | import { cn, formatTimeAgo } from "@/lib/utils";
+    :              ^^^^^^|^^^^^^
+    :                    `-- previous definition of `formatTimeAgo` here
+ 25 | import type { LucideIcon } from "lucide-react";
+ 26 | 
+ 27 | const iconMap: Record<string, LucideIcon> = {
+ 28 |   DollarSign,
+ 29 |   Users,
+ 30 |   ShoppingCart,
+ 31 |   TrendingUp,
+ 32 | };
+ 33 | 
+ 34 | const activityIconMap: Record<string, LucideIcon> = {
+ 35 |   ShoppingCart,
+ 36 |   DollarSign,
+ 37 |   UserPlus,
+ 38 |   Package,
+ 39 |   AlertTriangle,
+ 40 |   XCircle,
+ 41 |   CheckCircle,
+ 42 |   ShoppingBag,
+ 43 |   Star,
+ 44 |   Shield,
+ 45 | };
+ 46 | 
+ 47 | const activityColorMap: Record<string, string> = {
+ 48 |   order: "bg-primary-50 dark:bg-primary-500/10 text-primary-600 dark:text-primary-400",
+ 49 |   user: "bg-success-50 dark:bg-success-500/10 text-success-600 dark:text-success-400",
+ 50 |   product: "bg-warning-50 dark:bg-warning-500/10 text-warning-600 dark:text-warning-400",
+ 51 |   system: "bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400",
+ 52 | };
+ 53 | 
+ 54 | const statusColorMap: Record<string, string> = {
+ 55 |   completed: "bg-success-50 dark:bg-success-500/10 text-success-700 dark:text-success-400",
+ 56 |   pending: "bg-warning-50 dark:bg-warning-500/10 text-warning-700 dark:text-warning-400",
+ 57 |   failed: "bg-danger-50 dark:bg-danger-500/10 text-danger-700 dark:text-danger-400",
+ 58 | };
+ 59 | 
+ 60 | function formatTimeAgo(timestamp: string): string {
+    :          ^^^^^^|^^^^^^
+    :                `-- `formatTimeAgo` redefined here
+ 61 |   const date = new Date(timestamp);
+ 62 |   const now = new Date("2024-05-20T12:00:00Z"); // relative to our data
+ 63 |   const diffMs = now.getTime() - date.getTime();
+    `---- @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[   89700ms] ModuleBuildError: Module build failed (from ./node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error: 
+  x the name `formatTimeAgo` is defined multiple times
+    ,-[/Users/juan/Proyectos/autoforge/dashboard/src/app/dashboard/page.tsx:21:1]
+ 21 |   Shield,
+ 22 |   Loader2,
+ 23 | } from "lucide-react";
+ 24 | import { cn, formatTimeAgo } from "@/lib/utils";
+    :              ^^^^^^|^^^^^^
+    :                    `-- previous definition of `formatTimeAgo` here
+ 25 | import type { LucideIcon } from "lucide-react";
+ 26 | 
+ 27 | const iconMap: Record<string, LucideIcon> = {
+ 28 |   DollarSign,
+ 29 |   Users,
+ 30 |   ShoppingCart,
+ 31 |   TrendingUp,
+ 32 | };
+ 33 | 
+ 34 | const activityIconMap: Record<string, LucideIcon> = {
+ 35 |   ShoppingCart,
+ 36 |   DollarSign,
+ 37 |   UserPlus,
+ 38 |   Package,
+ 39 |   AlertTriangle,
+ 40 |   XCircle,
+ 41 |   CheckCircle,
+ 42 |   ShoppingBag,
+ 43 |   Star,
+ 44 |   Shield,
+ 45 | };
+ 46 | 
+ 47 | const activityColorMap: Record<string, string> = {
+ 48 |   order: "bg-primary-50 dark:bg-primary-500/10 text-primary-600 dark:text-primary-400",
+ 49 |   user: "bg-success-50 dark:bg-success-500/10 text-success-600 dark:text-success-400",
+ 50 |   product: "bg-warning-50 dark:bg-warning-500/10 text-warning-600 dark:text-warning-400",
+ 51 |   system: "bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400",
+ 52 | };
+ 53 | 
+ 54 | const statusColorMap: Record<string, string> = {
+ 55 |   completed: "bg-success-50 dark:bg-success-500/10 text-success-700 dark:text-success-400",
+ 56 |   pending: "bg-warning-50 dark:bg-warning-500/10 text-warning-700 dark:text-warning-400",
+ 57 |   failed: "bg-danger-50 dark:bg-danger-500/10 text-danger-700 dark:text-danger-400",
+ 58 | };
+ 59 | 
+ 60 | function formatTimeAgo(timestamp: string): string {
+    :          ^^^^^^|^^^^^^
+    :                `-- `formatTimeAgo` redefined here
+ 61 |   const date = new Date(timestamp);
+ 62 |   const now = new Date("2024-05-20T12:00:00Z"); // relative to our data
+ 63 |   const diffMs = now.getTime() - date.getTime();
+    `----
+
+    at getServerError (webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/nodeStackFrames.js:38:15)
+    at hydrate/< (webpack-internal:///./node_modules/next/dist/client/index.js:627:27)
+    at setTimeout handler*hydrate (webpack-internal:///./node_modules/next/dist/client/index.js:615:27)
+    at async*pageBootrap (webpack-internal:///./node_modules/next/dist/client/page-bootstrap.js:27:26)
+    at  (webpack-internal:///./node_modules/next/dist/client/next-dev.js:25:43)
+    at promise callback* (webpack-internal:///./node_modules/next/dist/client/next-dev.js:23:4)
+    at ./node_modules/next/dist/client/next-dev.js (http://localhost:3002/_next/static/chunks/fallback/main.js:820:1)
+    at options.factory (http://localhost:3002/_next/static/chunks/fallback/webpack.js:647:31)
+    at __webpack_require__ (http://localhost:3002/_next/static/chunks/fallback/webpack.js:37:33)
+    at __webpack_exec__ (http://localhost:3002/_next/static/chunks/fallback/main.js:1975:61)
+    at  (http://localhost:3002/_next/static/chunks/fallback/main.js:1976:53)
+    at webpackJsonpCallback (http://localhost:3002/_next/static/chunks/fallback/webpack.js:1195:46)
+    at  (http://localhost:3002/_next/static/chunks/fallback/main.js:9:61)
+[   93951ms] [WARNING] [Fast Refresh] performing full reload
+
+Fast Refresh will perform a full reload when you edit a file that's imported by modules outside of the React rendering tree.
+You might have a file which exports a React component but also exports a value that is imported by a non-React component file.
+Consider migrating the non-React component export to a separate file and importing it into both files.
+
+It is also possible the parent component of the component you edited is a class component, which disables Fast Refresh.
+Fast Refresh requires at least one parent function component in your React tree. @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:347
+[  104365ms] [WARNING] [JavaScript Warning: "The resource at “http://localhost:3002/_next/static/media/e4af272ccee01ff0-s.p.woff2” preloaded with link preload was not used within a few seconds. Make sure all attributes of the preload tag are set correctly." {file: "http://localhost:3002/dashboard/calendar" line: 0}] @ http://localhost:3002/dashboard/calendar:0

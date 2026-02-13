@@ -1,0 +1,3 @@
+[     515ms] [WARNING] [JavaScript Warning: "Loading failed for the <script> with source “http://localhost:3005/_next/static/chunks/app/(auth)/layout.js”." {file: "http://localhost:3005/" line: 1}] @ http://localhost:3005/:1
+[     516ms] [ERROR] Failed to fetch RSC payload for http://localhost:3005/login. Falling back to browser navigation. Error @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
+[     516ms] [WARNING] [JavaScript Warning: "Loading failed for the <script> with source “http://localhost:3005/_next/static/chunks/app/(auth)/login/page.js”." {file: "http://localhost:3005/" line: 1}] @ http://localhost:3005/:1

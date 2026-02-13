@@ -1,0 +1,14 @@
+node_modules
+.next
+.git
+.gitignore
+*.md
+.env*.local
+.idea
+.playwright-mcp
+.autoforge
+Dockerfile
+.dockerignore
+*.png
+*.txt
+.github
