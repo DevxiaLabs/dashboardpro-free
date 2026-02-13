@@ -1,0 +1,223 @@
+[     255ms] [WARNING] [JavaScript Warning: "Loading failed for the <script> with source “http://localhost:3000/_next/static/chunks/app/dashboard/layout.js”." {file: "http://localhost:3000/dashboard/users" line: 1}] @ http://localhost:3000/dashboard/users:1
+[   10279ms] [WARNING] [JavaScript Warning: "The resource at “http://localhost:3000/_next/static/media/e4af272ccee01ff0-s.p.woff2” preloaded with link preload was not used within a few seconds. Make sure all attributes of the preload tag are set correctly." {file: "http://localhost:3000/dashboard/users" line: 0}] @ http://localhost:3000/dashboard/users:0
+[  120578ms] ChunkLoadError: Loading chunk app/dashboard/layout failed.
+(timeout: http://localhost:3000/_next/static/chunks/app/dashboard/layout.js)
+    at __webpack_require__.f.j (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:852:29)
+    at __webpack_require__.e/< (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:155:40)
+    at __webpack_require__.e (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:154:67)
+    at createRequire/fn.e (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:391:50)
+    at loadChunk (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:251:30)
+    at preloadModule (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:173:31)
+    at resolveModule (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:1819:30)
+    at processFullRow (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:1908:22)
+    at processBinaryChunk (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2078:21)
+    at progress (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2159:23)
+    at promise callback*progress (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2160:26)
+    at promise callback*startReadingFromStream (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2167:17)
+    at createFromReadableStream (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2172:25)
+    at  (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:108:69)
+    at (app-pages-browser)/./node_modules/next/dist/client/app-index.js (http://localhost:3000/_next/static/chunks/main-app.js?v=1770801199964:244:1)
+    at options.factory (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:715:31)
+    at __webpack_require__ (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:37:33)
+    at fn (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:371:21)
+    at  (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-next-dev.js:9:44)
+    at appBootstrap/< (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-bootstrap.js:57:9)
+    at loadScriptsInSequence (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-bootstrap.js:23:16)
+    at appBootstrap (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-bootstrap.js:56:26)
+    at  (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-next-dev.js:8:32)
+    at (app-pages-browser)/./node_modules/next/dist/client/app-next-dev.js (http://localhost:3000/_next/static/chunks/main-app.js?v=1770801199964:266:1)
+    at options.factory (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:715:31)
+    at __webpack_require__ (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:37:33)
+    at __webpack_exec__ (http://localhost:3000/_next/static/chunks/main-app.js?v=1770801199964:2007:61)
+    at  (http://localhost:3000/_next/static/chunks/main-app.js?v=1770801199964:2008:154)
+    at webpackJsonpCallback (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:1387:46)
+    at  (http://localhost:3000/_next/static/chunks/main-app.js?v=1770801199964:9:61)
+[  120581ms] [ERROR] Warning: An error occurred during hydration. The server HTML was replaced with client content in <#document>. @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
+[  121174ms] [ERROR] The above error occurred in the <NotFoundErrorBoundary> component:
+
+Lazy
+InnerLayoutRouter@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js:244:18
+RedirectErrorBoundary@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/redirect-boundary.js:74:9
+RedirectBoundary@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/redirect-boundary.js:82:24
+NotFoundErrorBoundary@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/not-found-boundary.js:76:9
+NotFoundBoundary@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/not-found-boundary.js:84:62
+LoadingBoundary@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js:349:76
+ErrorBoundaryHandler@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/error-boundary.js:113:9
+ErrorBoundary@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/error-boundary.js:160:67
+InnerScrollAndFocusHandler@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js:153:9
+ScrollAndFocusHandler@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js:228:37
+RenderFromTemplateContext@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/render-from-template-context.js:16:44
+OuterLayoutRouter@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js:370:149
+AuthProvider@webpack-internal:///(app-pages-browser)/./src/contexts/AuthContext.tsx:26:24
+ThemeProvider@webpack-internal:///(app-pages-browser)/./src/contexts/ThemeContext.tsx:14:24
+body
+html
+RootLayout (Server)
+RedirectErrorBoundary@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/redirect-boundary.js:74:9
+RedirectBoundary@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/redirect-boundary.js:82:24
+NotFoundErrorBoundary@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/not-found-boundary.js:76:9
+NotFoundBoundary@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/not-found-boundary.js:84:62
+DevRootNotFoundBoundary@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/dev-root-not-found-boundary.js:33:24
+ReactDevOverlay@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/ReactDevOverlay.js:87:9
+HotReload@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:321:37
+Router@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/app-router.js:207:123
+ErrorBoundaryHandler@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/error-boundary.js:113:9
+ErrorBoundary@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/error-boundary.js:160:67
+AppRouter@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/app-router.js:585:47
+ServerRoot@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:112:27
+Root@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:117:24
+
+React will try to recreate this component tree from scratch using the error boundary you provided, ErrorBoundaryHandler. @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
+[  121179ms] ChunkLoadError: Loading chunk app/dashboard/layout failed.
+(timeout: http://localhost:3000/_next/static/chunks/app/dashboard/layout.js)
+    at __webpack_require__.f.j (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:852:29)
+    at __webpack_require__.e/< (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:155:40)
+    at __webpack_require__.e (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:154:67)
+    at createRequire/fn.e (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:391:50)
+    at loadChunk (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:251:30)
+    at preloadModule (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:173:31)
+    at resolveModule (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:1819:30)
+    at processFullRow (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:1908:22)
+    at processBinaryChunk (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2078:21)
+    at progress (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2159:23)
+    at promise callback*progress (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2160:26)
+    at promise callback*startReadingFromStream (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2167:17)
+    at createFromReadableStream (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2172:25)
+    at  (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:108:69)
+    at (app-pages-browser)/./node_modules/next/dist/client/app-index.js (http://localhost:3000/_next/static/chunks/main-app.js?v=1770801199964:244:1)
+    at options.factory (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:715:31)
+    at __webpack_require__ (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:37:33)
+    at fn (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:371:21)
+    at  (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-next-dev.js:9:44)
+    at appBootstrap/< (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-bootstrap.js:57:9)
+    at loadScriptsInSequence (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-bootstrap.js:23:16)
+    at appBootstrap (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-bootstrap.js:56:26)
+    at  (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-next-dev.js:8:32)
+    at (app-pages-browser)/./node_modules/next/dist/client/app-next-dev.js (http://localhost:3000/_next/static/chunks/main-app.js?v=1770801199964:266:1)
+    at options.factory (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:715:31)
+    at __webpack_require__ (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:37:33)
+    at __webpack_exec__ (http://localhost:3000/_next/static/chunks/main-app.js?v=1770801199964:2007:61)
+    at  (http://localhost:3000/_next/static/chunks/main-app.js?v=1770801199964:2008:154)
+    at webpackJsonpCallback (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:1387:46)
+    at  (http://localhost:3000/_next/static/chunks/main-app.js?v=1770801199964:9:61)
+[  121182ms] ChunkLoadError: Loading chunk app/dashboard/layout failed.
+(timeout: http://localhost:3000/_next/static/chunks/app/dashboard/layout.js)
+    at __webpack_require__.f.j (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:852:29)
+    at __webpack_require__.e/< (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:155:40)
+    at __webpack_require__.e (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:154:67)
+    at createRequire/fn.e (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:391:50)
+    at loadChunk (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:251:30)
+    at preloadModule (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:173:31)
+    at resolveModule (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:1819:30)
+    at processFullRow (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:1908:22)
+    at processBinaryChunk (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2078:21)
+    at progress (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2159:23)
+    at promise callback*progress (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2160:26)
+    at promise callback*startReadingFromStream (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2167:17)
+    at createFromReadableStream (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2172:25)
+    at  (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:108:69)
+    at (app-pages-browser)/./node_modules/next/dist/client/app-index.js (http://localhost:3000/_next/static/chunks/main-app.js?v=1770801199964:244:1)
+    at options.factory (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:715:31)
+    at __webpack_require__ (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:37:33)
+    at fn (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:371:21)
+    at  (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-next-dev.js:9:44)
+    at appBootstrap/< (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-bootstrap.js:57:9)
+    at loadScriptsInSequence (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-bootstrap.js:23:16)
+    at appBootstrap (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-bootstrap.js:56:26)
+    at  (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-next-dev.js:8:32)
+    at (app-pages-browser)/./node_modules/next/dist/client/app-next-dev.js (http://localhost:3000/_next/static/chunks/main-app.js?v=1770801199964:266:1)
+    at options.factory (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:715:31)
+    at __webpack_require__ (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:37:33)
+    at __webpack_exec__ (http://localhost:3000/_next/static/chunks/main-app.js?v=1770801199964:2007:61)
+    at  (http://localhost:3000/_next/static/chunks/main-app.js?v=1770801199964:2008:154)
+    at webpackJsonpCallback (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:1387:46)
+    at  (http://localhost:3000/_next/static/chunks/main-app.js?v=1770801199964:9:61)
+[  121184ms] ChunkLoadError: Loading chunk app/dashboard/layout failed.
+(timeout: http://localhost:3000/_next/static/chunks/app/dashboard/layout.js)
+    at __webpack_require__.f.j (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:852:29)
+    at __webpack_require__.e/< (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:155:40)
+    at __webpack_require__.e (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:154:67)
+    at createRequire/fn.e (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:391:50)
+    at loadChunk (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:251:30)
+    at preloadModule (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:173:31)
+    at resolveModule (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:1819:30)
+    at processFullRow (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:1908:22)
+    at processBinaryChunk (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2078:21)
+    at progress (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2159:23)
+    at promise callback*progress (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2160:26)
+    at promise callback*startReadingFromStream (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2167:17)
+    at createFromReadableStream (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:2172:25)
+    at  (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:108:69)
+    at (app-pages-browser)/./node_modules/next/dist/client/app-index.js (http://localhost:3000/_next/static/chunks/main-app.js?v=1770801199964:244:1)
+    at options.factory (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:715:31)
+    at __webpack_require__ (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:37:33)
+    at fn (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:371:21)
+    at  (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-next-dev.js:9:44)
+    at appBootstrap/< (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-bootstrap.js:57:9)
+    at loadScriptsInSequence (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-bootstrap.js:23:16)
+    at appBootstrap (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-bootstrap.js:56:26)
+    at  (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-next-dev.js:8:32)
+    at (app-pages-browser)/./node_modules/next/dist/client/app-next-dev.js (http://localhost:3000/_next/static/chunks/main-app.js?v=1770801199964:266:1)
+    at options.factory (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:715:31)
+    at __webpack_require__ (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:37:33)
+    at __webpack_exec__ (http://localhost:3000/_next/static/chunks/main-app.js?v=1770801199964:2007:61)
+    at  (http://localhost:3000/_next/static/chunks/main-app.js?v=1770801199964:2008:154)
+    at webpackJsonpCallback (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:1387:46)
+    at  (http://localhost:3000/_next/static/chunks/main-app.js?v=1770801199964:9:61)
+[  121184ms] Error: There was an error while hydrating. Because the error happened outside of a Suspense boundary, the entire root will switch to client rendering.
+    at updateHostRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:16571:57)
+    at beginWork$1 (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:18486:14)
+    at beginWork (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:26927:14)
+    at performUnitOfWork (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:25748:12)
+    at workLoopSync (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:25464:22)
+    at renderRootSync (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:25419:7)
+    at recoverFromConcurrentError (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:24597:34)
+    at performConcurrentWorkOnRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:24542:26)
+    at workLoop (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js:256:42)
+    at flushWork (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js:225:14)
+    at performWorkUntilDeadline (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js:534:21)
+    at EventHandlerNonNull* (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js:569:3)
+    at  (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js:630:5)
+    at (app-pages-browser)/./node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js (http://localhost:3000/_next/static/chunks/main-app.js?v=1770801199964:113:1)
+    at options.factory (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:715:31)
+    at __webpack_require__ (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:37:33)
+    at fn (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:371:21)
+    at  (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/scheduler/index.js:4:20)
+    at (app-pages-browser)/./node_modules/next/dist/compiled/scheduler/index.js (http://localhost:3000/_next/static/chunks/main-app.js?v=1770801199964:124:1)
+    at options.factory (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:715:31)
+    at __webpack_require__ (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:37:33)
+    at fn (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:371:21)
+    at  (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:27:36)
+    at  (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:38595:5)
+    at (app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js (http://localhost:3000/_next/static/chunks/main-app.js?v=1770801199964:1847:1)
+    at options.factory (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:715:31)
+    at __webpack_require__ (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:37:33)
+    at fn (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:371:21)
+    at  (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/index.js:32:20)
+    at (app-pages-browser)/./node_modules/next/dist/compiled/react-dom/index.js (http://localhost:3000/_next/static/chunks/main-app.js?v=1770801199964:1869:1)
+    at options.factory (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:715:31)
+    at __webpack_require__ (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:37:33)
+    at fn (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:371:21)
+    at  (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/client.js:3:28)
+    at (app-pages-browser)/./node_modules/next/dist/compiled/react-dom/client.js (http://localhost:3000/_next/static/chunks/main-app.js?v=1770801199964:1858:1)
+    at options.factory (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:715:31)
+    at __webpack_require__ (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:37:33)
+    at fn (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:371:21)
+    at  (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:15:58)
+    at (app-pages-browser)/./node_modules/next/dist/client/app-index.js (http://localhost:3000/_next/static/chunks/main-app.js?v=1770801199964:244:1)
+    at options.factory (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:715:31)
+    at __webpack_require__ (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:37:33)
+    at fn (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:371:21)
+    at  (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-next-dev.js:9:44)
+    at appBootstrap/< (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-bootstrap.js:57:9)
+    at loadScriptsInSequence (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-bootstrap.js:23:16)
+    at appBootstrap (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-bootstrap.js:56:26)
+    at  (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-next-dev.js:8:32)
+    at (app-pages-browser)/./node_modules/next/dist/client/app-next-dev.js (http://localhost:3000/_next/static/chunks/main-app.js?v=1770801199964:266:1)
+    at options.factory (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:715:31)
+    at __webpack_require__ (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:37:33)
+    at __webpack_exec__ (http://localhost:3000/_next/static/chunks/main-app.js?v=1770801199964:2007:61)
+    at  (http://localhost:3000/_next/static/chunks/main-app.js?v=1770801199964:2008:154)
+    at webpackJsonpCallback (http://localhost:3000/_next/static/chunks/webpack.js?v=1770801199964:1387:46)
+    at  (http://localhost:3000/_next/static/chunks/main-app.js?v=1770801199964:9:61)
+[  138021ms] [WARNING] [JavaScript Warning: "The resource at “http://localhost:3000/_next/static/media/e4af272ccee01ff0-s.p.woff2” preloaded with link preload was not used within a few seconds. Make sure all attributes of the preload tag are set correctly." {file: "http://localhost:3000/login" line: 0}] @ http://localhost:3000/login:0

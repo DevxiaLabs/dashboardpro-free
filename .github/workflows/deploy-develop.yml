@@ -6,7 +6,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: devxialabs/dashboardpro-free
+  IMAGE_NAME: devxialabs/dashboardpro
 
 jobs:
   build:
@@ -59,7 +59,7 @@ jobs:
       - name: Deploy to CapRover
         env:
           CAPROVER_URL: ${{ secrets.CAPROVER_SERVER }}
-          CAPROVER_APP: dashboardlite
+          CAPROVER_APP: dashboardpro
           APP_TOKEN: ${{ secrets.CAPROVER_APP_TOKEN_FRONTEND }}
           IMAGE_NAME: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:sha-${{ needs.build.outputs.image_tag }}
         run: |

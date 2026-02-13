@@ -1,0 +1,3 @@
+[    7649ms] [WARNING] [JavaScript Warning: "This page is in Quirks Mode. Page layout may be impacted. For Standards Mode use “<!DOCTYPE html>”." {file: "http://localhost:3000/dashboard" line: 0}] @ http://localhost:3000/dashboard:0
+[   22887ms] [WARNING] [JavaScript Warning: "Loading failed for the <script> with source “http://localhost:3000/_next/static/chunks/app/dashboard/page.js”." {file: "http://localhost:3000/dashboard" line: 1}] @ http://localhost:3000/dashboard:1
+[   22887ms] [WARNING] [JavaScript Warning: "Loading failed for the <script> with source “http://localhost:3000/_next/static/chunks/app/dashboard/layout.js”." {file: "http://localhost:3000/dashboard" line: 1}] @ http://localhost:3000/dashboard:1

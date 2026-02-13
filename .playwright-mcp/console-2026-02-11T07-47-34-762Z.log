@@ -1,0 +1,1 @@
+[     415ms] [WARNING] [JavaScript Warning: "Loading failed for the <script> with source “http://localhost:3000/_next/static/chunks/app/dashboard/layout.js”." {file: "http://localhost:3000/dashboard/analytics" line: 1}] @ http://localhost:3000/dashboard/analytics:1

@@ -1,0 +1,25 @@
+[    1707ms] Error: Cannot find module './368.js'
+Require stack:
+- /Users/juan/Proyectos/autoforge/dashboard/.next/server/webpack-runtime.js
+- /Users/juan/Proyectos/autoforge/dashboard/.next/server/app/dashboard/pricing/page.js
+- /Users/juan/Proyectos/autoforge/dashboard/node_modules/next/dist/server/require.js
+- /Users/juan/Proyectos/autoforge/dashboard/node_modules/next/dist/server/load-components.js
+- /Users/juan/Proyectos/autoforge/dashboard/node_modules/next/dist/build/utils.js
+- /Users/juan/Proyectos/autoforge/dashboard/node_modules/next/dist/server/dev/hot-middleware.js
+- /Users/juan/Proyectos/autoforge/dashboard/node_modules/next/dist/server/dev/hot-reloader-webpack.js
+- /Users/juan/Proyectos/autoforge/dashboard/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /Users/juan/Proyectos/autoforge/dashboard/node_modules/next/dist/server/lib/router-server.js
+- /Users/juan/Proyectos/autoforge/dashboard/node_modules/next/dist/server/lib/start-server.js
+    at getServerError (webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/nodeStackFrames.js:38:15)
+    at hydrate/< (webpack-internal:///./node_modules/next/dist/client/index.js:627:27)
+    at setTimeout handler*hydrate (webpack-internal:///./node_modules/next/dist/client/index.js:615:27)
+    at async*pageBootrap (webpack-internal:///./node_modules/next/dist/client/page-bootstrap.js:27:26)
+    at  (webpack-internal:///./node_modules/next/dist/client/next-dev.js:25:43)
+    at promise callback* (webpack-internal:///./node_modules/next/dist/client/next-dev.js:23:4)
+    at ./node_modules/next/dist/client/next-dev.js (http://localhost:3000/_next/static/chunks/main.js:820:1)
+    at options.factory (http://localhost:3000/_next/static/chunks/webpack.js:715:31)
+    at __webpack_require__ (http://localhost:3000/_next/static/chunks/webpack.js:37:33)
+    at __webpack_exec__ (http://localhost:3000/_next/static/chunks/main.js:1975:61)
+    at  (http://localhost:3000/_next/static/chunks/main.js:1976:53)
+    at webpackJsonpCallback (http://localhost:3000/_next/static/chunks/webpack.js:1387:46)
+    at  (http://localhost:3000/_next/static/chunks/main.js:9:61)

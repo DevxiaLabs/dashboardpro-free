@@ -1,0 +1,5 @@
+[     108ms] [WARNING] [JavaScript Warning: "Loading failed for the <script> with source “http://localhost:3000/_next/static/chunks/main-app.js?v=1770795913167”." {file: "http://localhost:3000/" line: 1}] @ http://localhost:3000/:1
+[     110ms] [WARNING] [JavaScript Warning: "Loading failed for the <script> with source “http://localhost:3000/_next/static/chunks/app-pages-internals.js”." {file: "http://localhost:3000/" line: 1}] @ http://localhost:3000/:1
+[     110ms] [WARNING] [JavaScript Warning: "Loading failed for the <script> with source “http://localhost:3000/_next/static/chunks/app/not-found.js”." {file: "http://localhost:3000/" line: 1}] @ http://localhost:3000/:1
+[     110ms] [WARNING] [JavaScript Warning: "Loading failed for the <script> with source “http://localhost:3000/_next/static/chunks/app/layout.js”." {file: "http://localhost:3000/" line: 1}] @ http://localhost:3000/:1
+[     115ms] [WARNING] [JavaScript Warning: "Loading failed for the <script> with source “http://localhost:3000/_next/static/chunks/app/error.js”." {file: "http://localhost:3000/" line: 1}] @ http://localhost:3000/:1
