@@ -1,0 +1,4 @@
+[     205ms] [ERROR] Failed to fetch RSC payload for http://localhost:3000/dashboard. Falling back to browser navigation. Error @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
+[     205ms] [WARNING] [JavaScript Warning: "Loading failed for the <script> with source “http://localhost:3000/_next/static/chunks/app/dashboard/page.js”." {file: "http://localhost:3000/login" line: 1}] @ http://localhost:3000/login:1
+[     207ms] [WARNING] [JavaScript Warning: "Loading failed for the <script> with source “http://localhost:3000/_next/static/chunks/app/dashboard/layout.js”." {file: "http://localhost:3000/login" line: 1}] @ http://localhost:3000/login:1
+[     232ms] [WARNING] [JavaScript Warning: "Loading failed for the <script> with source “http://localhost:3000/_next/static/chunks/app/dashboard/page.js”." {file: "http://localhost:3000/dashboard" line: 1}] @ http://localhost:3000/dashboard:1

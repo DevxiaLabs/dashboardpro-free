@@ -1,0 +1,16 @@
+[   27850ms] [WARNING] [Fast Refresh] performing full reload
+
+Fast Refresh will perform a full reload when you edit a file that's imported by modules outside of the React rendering tree.
+You might have a file which exports a React component but also exports a value that is imported by a non-React component file.
+Consider migrating the non-React component export to a separate file and importing it into both files.
+
+It is also possible the parent component of the component you edited is a class component, which disables Fast Refresh.
+Fast Refresh requires at least one parent function component in your React tree. @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:112
+[   27900ms] [WARNING] [JavaScript Warning: "Loading failed for the <script> with source “http://localhost:3000/_next/static/chunks/app-pages-internals.js”." {file: "http://localhost:3000/login" line: 1}] @ http://localhost:3000/login:1
+[   27900ms] [WARNING] [JavaScript Warning: "Loading failed for the <script> with source “http://localhost:3000/_next/static/chunks/app/layout.js”." {file: "http://localhost:3000/login" line: 1}] @ http://localhost:3000/login:1
+[   27900ms] [WARNING] [JavaScript Warning: "Loading failed for the <script> with source “http://localhost:3000/_next/static/chunks/app/(auth)/login/page.js”." {file: "http://localhost:3000/login" line: 1}] @ http://localhost:3000/login:1
+[   27900ms] [WARNING] [JavaScript Warning: "Loading failed for the <script> with source “http://localhost:3000/_next/static/chunks/app/(auth)/layout.js”." {file: "http://localhost:3000/login" line: 1}] @ http://localhost:3000/login:1
+[   27901ms] [WARNING] [JavaScript Warning: "Loading failed for the <script> with source “http://localhost:3000/_next/static/chunks/app/error.js”." {file: "http://localhost:3000/login" line: 1}] @ http://localhost:3000/login:1
+[   27903ms] [WARNING] [JavaScript Warning: "Loading failed for the <script> with source “http://localhost:3000/_next/static/chunks/app/not-found.js”." {file: "http://localhost:3000/login" line: 1}] @ http://localhost:3000/login:1
+[   27914ms] [WARNING] [JavaScript Warning: "Loading failed for the <script> with source “http://localhost:3000/_next/static/chunks/main-app.js?v=1770791709777”." {file: "http://localhost:3000/login" line: 1}] @ http://localhost:3000/login:1
+[   37909ms] [WARNING] [JavaScript Warning: "The resource at “http://localhost:3000/_next/static/media/e4af272ccee01ff0-s.p.woff2” preloaded with link preload was not used within a few seconds. Make sure all attributes of the preload tag are set correctly." {file: "http://localhost:3000/login" line: 0}] @ http://localhost:3000/login:0

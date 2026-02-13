@@ -1,0 +1,438 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-inter: "Inter", system-ui, sans-serif;
+
+    /* Primary color CSS variables (default = Ocean) */
+    --color-primary-50: #eef3f9;
+    --color-primary-100: #d9e4f1;
+    --color-primary-200: #b7cde3;
+    --color-primary-300: #90b1d0;
+    --color-primary-400: #668eb6;
+    --color-primary-500: #416e9b;
+    --color-primary-600: #1e3a5f;
+    --color-primary-700: #19314f;
+    --color-primary-800: #132943;
+    --color-primary-900: #0f2136;
+    --color-primary-950: #0b1a2b;
+  }
+
+  /* Smooth color transitions */
+  html, body, * {
+    transition: color 200ms ease, background-color 200ms ease, border-color 200ms ease, fill 200ms ease, stroke 200ms ease;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html, body, * { transition: none !important; }
+  }
+
+  body {
+    @apply bg-gray-50 text-gray-900 antialiased;
+  }
+
+  .dark body {
+    @apply bg-gray-950 text-gray-100;
+  }
+
+  /* Global focus-visible ring for all interactive elements */
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible,
+  [role="button"]:focus-visible,
+  [tabindex]:focus-visible {
+    /* Use CSS var-driven ring color */
+    outline: none;
+    --tw-ring-color: var(--color-primary-500);
+    @apply ring-2 ring-offset-2 ring-offset-white rounded-sm;
+  }
+
+  .dark a:focus-visible,
+  .dark button:focus-visible,
+  .dark input:focus-visible,
+  .dark select:focus-visible,
+  .dark textarea:focus-visible,
+  .dark [role="button"]:focus-visible,
+  .dark [tabindex]:focus-visible {
+    @apply ring-offset-gray-900;
+  }
+
+  /* Inputs/selects that already have their own focus ring styling: override offset to match */
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible {
+    @apply ring-offset-0;
+  }
+
+}
+
+/* Theme presets — OUTSIDE @layer to prevent Tailwind purging */
+/* Light presets */
+.theme-ocean {
+  --color-primary-50: #eef3f9;
+  --color-primary-100: #d9e4f1;
+  --color-primary-200: #b7cde3;
+  --color-primary-300: #90b1d0;
+  --color-primary-400: #668eb6;
+  --color-primary-500: #416e9b;
+  --color-primary-600: #1e3a5f;
+  --color-primary-700: #19314f;
+  --color-primary-800: #132943;
+  --color-primary-900: #0f2136;
+  --color-primary-950: #0b1a2b;
+}
+.theme-sunset {
+  --color-primary-50: #fff4f1;
+  --color-primary-100: #ffe5df;
+  --color-primary-200: #ffcfc4;
+  --color-primary-300: #ffb19f;
+  --color-primary-400: #ff8e75;
+  --color-primary-500: #f47257;
+  --color-primary-600: #e8634a;
+  --color-primary-700: #d4523b;
+  --color-primary-800: #b64532;
+  --color-primary-900: #933a2b;
+  --color-primary-950: #572016;
+}
+.theme-forest {
+  --color-primary-50: #eff8f3;
+  --color-primary-100: #dbefe4;
+  --color-primary-200: #b9e0cd;
+  --color-primary-300: #90cbb1;
+  --color-primary-400: #66b293;
+  --color-primary-500: #429976;
+  --color-primary-600: #2d6a4f;
+  --color-primary-700: #245742;
+  --color-primary-800: #1e4737;
+  --color-primary-900: #17392c;
+  --color-primary-950: #0e231b;
+}
+.theme-lavender {
+  --color-primary-50: #f6f3fb;
+  --color-primary-100: #ece6f8;
+  --color-primary-200: #d8cff2;
+  --color-primary-300: #beaee8;
+  --color-primary-400: #a38bd9;
+  --color-primary-500: #8a6fca;
+  --color-primary-600: #7c5cbf;
+  --color-primary-700: #684ca3;
+  --color-primary-800: #543e87;
+  --color-primary-900: #45346f;
+  --color-primary-950: #2b2046;
+}
+.theme-slate {
+  --color-primary-50: #f5f7fa;
+  --color-primary-100: #e6eaf1;
+  --color-primary-200: #cfd6e0;
+  --color-primary-300: #b0bccb;
+  --color-primary-400: #8e9db1;
+  --color-primary-500: #6b7f97;
+  --color-primary-600: #475569;
+  --color-primary-700: #3a4556;
+  --color-primary-800: #2e3745;
+  --color-primary-900: #242c37;
+  --color-primary-950: #161c24;
+}
+
+/* Dark presets (tuned for dark UI – slightly deeper mids) */
+.theme-ocean-dark {
+  --color-primary-50: #0b1a2b;
+  --color-primary-100: #0f2136;
+  --color-primary-200: #132943;
+  --color-primary-300: #19314f;
+  --color-primary-400: #1e3a5f;
+  --color-primary-500: #416e9b;
+  --color-primary-600: #1e3a5f;
+  --color-primary-700: #19314f;
+  --color-primary-800: #132943;
+  --color-primary-900: #0f2136;
+  --color-primary-950: #0b1a2b;
+}
+.theme-sunset-dark {
+  --color-primary-50: #572016;
+  --color-primary-100: #6f2a1b;
+  --color-primary-200: #7f3322;
+  --color-primary-300: #933a2b;
+  --color-primary-400: #b64532;
+  --color-primary-500: #f47257;
+  --color-primary-600: #e8634a;
+  --color-primary-700: #d4523b;
+  --color-primary-800: #b64532;
+  --color-primary-900: #933a2b;
+  --color-primary-950: #6f2a1b;
+}
+.theme-forest-dark {
+  --color-primary-50: #0e231b;
+  --color-primary-100: #143127;
+  --color-primary-200: #17392c;
+  --color-primary-300: #1e4737;
+  --color-primary-400: #245742;
+  --color-primary-500: #429976;
+  --color-primary-600: #2d6a4f;
+  --color-primary-700: #245742;
+  --color-primary-800: #1e4737;
+  --color-primary-900: #17392c;
+  --color-primary-950: #0e231b;
+}
+.theme-lavender-dark {
+  --color-primary-50: #2b2046;
+  --color-primary-100: #34275a;
+  --color-primary-200: #3d2e6e;
+  --color-primary-300: #45346f;
+  --color-primary-400: #543e87;
+  --color-primary-500: #8a6fca;
+  --color-primary-600: #7c5cbf;
+  --color-primary-700: #684ca3;
+  --color-primary-800: #543e87;
+  --color-primary-900: #45346f;
+  --color-primary-950: #34275a;
+}
+.theme-slate-dark {
+  --color-primary-50: #161c24;
+  --color-primary-100: #1c2430;
+  --color-primary-200: #222c3a;
+  --color-primary-300: #242c37;
+  --color-primary-400: #2e3745;
+  --color-primary-500: #6b7f97;
+  --color-primary-600: #475569;
+  --color-primary-700: #3a4556;
+  --color-primary-800: #2e3745;
+  --color-primary-900: #242c37;
+  --color-primary-950: #1c2430;
+}
+
+@layer components {
+  .btn-primary {
+    background-color: var(--color-primary-600);
+    color: white;
+    @apply font-medium rounded-lg px-4 py-2 transition-colors duration-200;
+  }
+  .btn-primary:hover { background-color: var(--color-primary-700); }
+  .btn-primary:active { background-color: var(--color-primary-800); }
+
+  .btn-secondary {
+    @apply bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium rounded-lg px-4 py-2 transition-colors duration-200;
+  }
+
+  .btn-outline {
+    @apply border border-gray-300 hover:bg-gray-50 text-gray-700 font-medium rounded-lg px-4 py-2 transition-colors duration-200;
+  }
+
+  .btn-ghost {
+    @apply hover:bg-gray-100 text-gray-700 font-medium rounded-lg px-4 py-2 transition-colors duration-200;
+  }
+
+  .btn-danger {
+    @apply bg-danger-600 text-white font-medium rounded-lg px-4 py-2 transition-colors duration-200;
+  }
+
+  .btn-danger:hover {
+    @apply bg-danger-700;
+  }
+
+  .card {
+    @apply bg-white rounded-xl shadow-sm border border-gray-200 p-4 sm:p-6 transition-shadow duration-200;
+  }
+
+  .card:hover {
+    @apply shadow-md;
+  }
+
+  .dark .card {
+    @apply bg-gray-900 shadow-none border-gray-700;
+  }
+
+  .dark .card:hover {
+    @apply border-gray-600;
+  }
+
+  .input-field {
+    @apply w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:border-transparent;
+    --tw-ring-color: var(--color-primary-500);
+  }
+
+  .dark .input-field {
+    @apply border-gray-600 bg-gray-800 text-gray-100;
+  }
+}
+
+/* Scrollbar styling + primary utility overrides */
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    @apply bg-gray-300 rounded-full;
+  }
+
+  .dark .scrollbar-thin::-webkit-scrollbar-thumb {
+    @apply bg-gray-600;
+  }
+
+  /* Map Tailwind primary utilities to CSS variables */
+  /* Text */
+  .text-primary-50 { color: var(--color-primary-50) !important; }
+  .text-primary-100 { color: var(--color-primary-100) !important; }
+  .text-primary-200 { color: var(--color-primary-200) !important; }
+  .text-primary-300 { color: var(--color-primary-300) !important; }
+  .text-primary-400 { color: var(--color-primary-400) !important; }
+  .text-primary-500 { color: var(--color-primary-500) !important; }
+  .text-primary-600 { color: var(--color-primary-600) !important; }
+  .text-primary-700 { color: var(--color-primary-700) !important; }
+  .text-primary-800 { color: var(--color-primary-800) !important; }
+  .text-primary-900 { color: var(--color-primary-900) !important; }
+  .text-primary-950 { color: var(--color-primary-950) !important; }
+
+  /* Background */
+  .bg-primary-50 { background-color: var(--color-primary-50) !important; }
+  .bg-primary-100 { background-color: var(--color-primary-100) !important; }
+  .bg-primary-200 { background-color: var(--color-primary-200) !important; }
+  .bg-primary-300 { background-color: var(--color-primary-300) !important; }
+  .bg-primary-400 { background-color: var(--color-primary-400) !important; }
+  .bg-primary-500 { background-color: var(--color-primary-500) !important; }
+  .bg-primary-600 { background-color: var(--color-primary-600) !important; }
+  .bg-primary-700 { background-color: var(--color-primary-700) !important; }
+  .bg-primary-800 { background-color: var(--color-primary-800) !important; }
+  .bg-primary-900 { background-color: var(--color-primary-900) !important; }
+  .bg-primary-950 { background-color: var(--color-primary-950) !important; }
+
+  /* Border */
+  .border-primary-50 { border-color: var(--color-primary-50) !important; }
+  .border-primary-100 { border-color: var(--color-primary-100) !important; }
+  .border-primary-200 { border-color: var(--color-primary-200) !important; }
+  .border-primary-300 { border-color: var(--color-primary-300) !important; }
+  .border-primary-400 { border-color: var(--color-primary-400) !important; }
+  .border-primary-500 { border-color: var(--color-primary-500) !important; }
+  .border-primary-600 { border-color: var(--color-primary-600) !important; }
+  .border-primary-700 { border-color: var(--color-primary-700) !important; }
+  .border-primary-800 { border-color: var(--color-primary-800) !important; }
+  .border-primary-900 { border-color: var(--color-primary-900) !important; }
+  .border-primary-950 { border-color: var(--color-primary-950) !important; }
+
+  /* Ring */
+  .ring-primary-500 { --tw-ring-color: var(--color-primary-500) !important; }
+  .ring-primary-600 { --tw-ring-color: var(--color-primary-600) !important; }
+  .ring-primary-700 { --tw-ring-color: var(--color-primary-700) !important; }
+
+  /* Gradient from/to */
+  .from-primary-400 { --tw-gradient-from: var(--color-primary-400) var(--tw-gradient-from-position); --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important; }
+  .from-primary-500 { --tw-gradient-from: var(--color-primary-500) var(--tw-gradient-from-position); --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important; }
+  .from-primary-600 { --tw-gradient-from: var(--color-primary-600) var(--tw-gradient-from-position); --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important; }
+  .to-primary-700 { --tw-gradient-to: var(--color-primary-700) var(--tw-gradient-to-position) !important; }
+  .to-primary-900 { --tw-gradient-to: var(--color-primary-900) var(--tw-gradient-to-position) !important; }
+}
+
+/* Auth panel floating animations */
+@keyframes float-slow {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(30px, -20px) scale(1.05); }
+  66% { transform: translate(-20px, 15px) scale(0.95); }
+}
+@keyframes float-medium {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-25px, -30px) scale(1.1); }
+}
+@keyframes float-fast {
+  0%, 100% { transform: translate(0, 0); }
+  25% { transform: translate(15px, -10px); }
+  50% { transform: translate(-10px, 20px); }
+  75% { transform: translate(20px, 10px); }
+}
+.animate-float-slow { animation: float-slow 20s ease-in-out infinite; }
+.animate-float-medium { animation: float-medium 15s ease-in-out infinite; }
+.animate-float-fast { animation: float-fast 10s ease-in-out infinite; }
+
+/* ==================== Print Styles ==================== */
+@media print {
+  /* Hide non-essential UI */
+  nav,
+  header,
+  [data-sidebar],
+  [data-no-print],
+  .no-print,
+  button,
+  input,
+  select,
+  textarea {
+    display: none !important;
+  }
+
+  /* Reset layout */
+  body {
+    background: white !important;
+    color: black !important;
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+
+  main {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Remove shadows, borders in dark mode */
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* Ensure content is visible */
+  .dark * {
+    color: black !important;
+    background: white !important;
+    border-color: #e5e7eb !important;
+  }
+
+  /* Print-friendly links */
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #666;
+  }
+
+  a[href^="#"]::after,
+  a[href^="javascript"]::after {
+    content: "";
+  }
+
+  /* Page breaks */
+  .print-break-before { page-break-before: always; }
+  .print-break-after { page-break-after: always; }
+  .print-no-break { page-break-inside: avoid; }
+
+  /* Show print-only elements */
+  .print-only { display: block !important; }
+
+  /* Tables */
+  table { border-collapse: collapse; width: 100%; }
+  th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+  thead { display: table-header-group; }
+  tr { page-break-inside: avoid; }
+
+  /* Charts - show as placeholder */
+  [data-chart] {
+    border: 1px dashed #ccc;
+    padding: 20px;
+    text-align: center;
+    color: #999;
+  }
+  [data-chart]::after {
+    content: "[Chart - see digital version]";
+  }
+}
+
+/* Print-only elements (hidden on screen) */
+.print-only { display: none; }

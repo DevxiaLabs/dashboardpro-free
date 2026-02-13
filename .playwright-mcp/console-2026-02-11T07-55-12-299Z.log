@@ -1,0 +1,94 @@
+[     969ms] [ERROR] ./src/components/charts/SalesByCategoryChart.tsx
+Error: 
+  x Unexpected token `motion`. Expected jsx identifier
+    ,-[/Users/juan/Proyectos/autoforge/dashboard/src/components/charts/SalesByCategoryChart.tsx:46:1]
+ 46 |   const isDark = resolvedTheme === "dark";
+ 47 | 
+ 48 |   return (
+ 49 |     <motion.div
+    :      ^^^^^^
+ 50 |       className="card"
+ 51 |       initial={{ opacity: 0, y: 20 }}
+ 52 |       animate={{ opacity: 1, y: 0 }}
+    `----
+
+Caused by:
+    Syntax Error @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[     978ms] ModuleBuildError: Module build failed (from ./node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error: 
+  x Unexpected token `motion`. Expected jsx identifier
+    ,-[/Users/juan/Proyectos/autoforge/dashboard/src/components/charts/SalesByCategoryChart.tsx:46:1]
+ 46 |   const isDark = resolvedTheme === "dark";
+ 47 | 
+ 48 |   return (
+ 49 |     <motion.div
+    :      ^^^^^^
+ 50 |       className="card"
+ 51 |       initial={{ opacity: 0, y: 20 }}
+ 52 |       animate={{ opacity: 1, y: 0 }}
+    `----
+
+
+Caused by:
+    Syntax Error
+    at getServerError (webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/nodeStackFrames.js:38:15)
+    at hydrate/< (webpack-internal:///./node_modules/next/dist/client/index.js:627:27)
+    at setTimeout handler*hydrate (webpack-internal:///./node_modules/next/dist/client/index.js:615:27)
+    at async*pageBootrap (webpack-internal:///./node_modules/next/dist/client/page-bootstrap.js:27:26)
+    at  (webpack-internal:///./node_modules/next/dist/client/next-dev.js:25:43)
+    at promise callback* (webpack-internal:///./node_modules/next/dist/client/next-dev.js:23:4)
+    at ./node_modules/next/dist/client/next-dev.js (http://localhost:3000/_next/static/chunks/fallback/main.js:820:1)
+    at options.factory (http://localhost:3000/_next/static/chunks/fallback/webpack.js:647:31)
+    at __webpack_require__ (http://localhost:3000/_next/static/chunks/fallback/webpack.js:37:33)
+    at __webpack_exec__ (http://localhost:3000/_next/static/chunks/fallback/main.js:1975:61)
+    at  (http://localhost:3000/_next/static/chunks/fallback/main.js:1976:53)
+    at webpackJsonpCallback (http://localhost:3000/_next/static/chunks/fallback/webpack.js:1195:46)
+    at  (http://localhost:3000/_next/static/chunks/fallback/main.js:9:61)
+[    1002ms] [ERROR] ./src/components/charts/SalesByCategoryChart.tsx
+Error: 
+  x Unexpected token `motion`. Expected jsx identifier
+    ,-[/Users/juan/Proyectos/autoforge/dashboard/src/components/charts/SalesByCategoryChart.tsx:46:1]
+ 46 |   const isDark = resolvedTheme === "dark";
+ 47 | 
+ 48 |   return (
+ 49 |     <motion.div
+    :      ^^^^^^
+ 50 |       className="card"
+ 51 |       initial={{ opacity: 0, y: 20 }}
+ 52 |       animate={{ opacity: 1, y: 0 }}
+    `----
+
+Caused by:
+    Syntax Error @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    1379ms] [ERROR] ./src/components/charts/SalesByCategoryChart.tsx
+Error: 
+  x Unexpected token `motion`. Expected jsx identifier
+    ,-[/Users/juan/Proyectos/autoforge/dashboard/src/components/charts/SalesByCategoryChart.tsx:46:1]
+ 46 |   const isDark = resolvedTheme === "dark";
+ 47 | 
+ 48 |   return (
+ 49 |     <motion.div
+    :      ^^^^^^
+ 50 |       className="card"
+ 51 |       initial={{ opacity: 0, y: 20 }}
+ 52 |       animate={{ opacity: 1, y: 0 }}
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/components/charts/SalesByCategoryChart.tsx
+./src/components/charts/index.ts
+./src/app/dashboard/page.tsx @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    1570ms] [WARNING] [Fast Refresh] performing full reload
+
+Fast Refresh will perform a full reload when you edit a file that's imported by modules outside of the React rendering tree.
+You might have a file which exports a React component but also exports a value that is imported by a non-React component file.
+Consider migrating the non-React component export to a separate file and importing it into both files.
+
+It is also possible the parent component of the component you edited is a class component, which disables Fast Refresh.
+Fast Refresh requires at least one parent function component in your React tree. @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:347
+[    2046ms] [WARNING] [JavaScript Warning: "Loading failed for the <script> with source “http://localhost:3000/_next/static/chunks/app/dashboard/users/page.js”." {file: "http://localhost:3000/dashboard/users" line: 1}] @ http://localhost:3000/dashboard/users:1
+[    2046ms] [WARNING] [JavaScript Warning: "Loading failed for the <script> with source “http://localhost:3000/_next/static/chunks/app/dashboard/layout.js”." {file: "http://localhost:3000/dashboard/users" line: 1}] @ http://localhost:3000/dashboard/users:1
+[   12023ms] [WARNING] [JavaScript Warning: "The resource at “http://localhost:3000/_next/static/media/e4af272ccee01ff0-s.p.woff2” preloaded with link preload was not used within a few seconds. Make sure all attributes of the preload tag are set correctly." {file: "http://localhost:3000/dashboard/users" line: 0}] @ http://localhost:3000/dashboard/users:0

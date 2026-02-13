@@ -1,0 +1,174 @@
+[    5361ms] [ERROR] ./src/app/globals.css:65:5
+Syntax error: /Users/juan/Proyectos/autoforge/dashboard/src/app/globals.css The `hover:bg-danger-700` class does not exist. If `hover:bg-danger-700` is a custom class, make sure it is defined within a `@layer` directive.
+
+  63 | 
+  64 |   .btn-danger {
+> 65 |     @apply bg-danger-600 hover:bg-danger-700 text-white font-medium rounded-lg px-4 py-2 transition-colors duration-200;
+     |     ^
+  66 |   }
+  67 | @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
+[    5364ms] [ERROR] ./src/app/globals.css
+Syntax error: /Users/juan/Proyectos/autoforge/dashboard/src/app/globals.css The `hover:bg-danger-700` class does not exist. If `hover:bg-danger-700` is a custom class, make sure it is defined within a `@layer` directive. (65:5)
+
+  63 | 
+  64 |   .btn-danger {
+> 65 |     @apply bg-danger-600 hover:bg-danger-700 text-white font-medium rounded-lg px-4 py-2 transition-colors duration-200;
+     |     ^
+  66 |   }
+  67 | 
+-- inner error --
+Syntax error: /Users/juan/Proyectos/autoforge/dashboard/src/app/globals.css The `hover:bg-danger-700` class does not exist. If `hover:bg-danger-700` is a custom class, make sure it is defined within a `@layer` directive. (65:5)
+
+  63 | 
+  64 |   .btn-danger {
+> 65 |     @apply bg-danger-600 hover:bg-danger-700 text-white font-medium rounded-lg px-4 py-2 transition-colors duration-200;
+     |     ^
+  66 |   }
+  67 | 
+Generated code for /Users/juan/Proyectos/autoforge/dashboard/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!/Users/juan/Proyectos/autoforge/dashboard/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!/Users/juan/Proyectos/autoforge/dashboard/src/app/globals.css
+
+Import trace for requested module:
+./src/app/globals.css @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
+[    6821ms] [ERROR] ./src/app/globals.css:65:5
+Syntax error: /Users/juan/Proyectos/autoforge/dashboard/src/app/globals.css The `hover:bg-danger-700` class does not exist. If `hover:bg-danger-700` is a custom class, make sure it is defined within a `@layer` directive.
+
+  63 | 
+  64 |   .btn-danger {
+> 65 |     @apply bg-danger-600 hover:bg-danger-700 text-white font-medium rounded-lg px-4 py-2 transition-colors duration-200;
+     |     ^
+  66 |   }
+  67 | @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
+[    6821ms] [ERROR] ./src/app/globals.css
+Syntax error: /Users/juan/Proyectos/autoforge/dashboard/src/app/globals.css The `hover:bg-danger-700` class does not exist. If `hover:bg-danger-700` is a custom class, make sure it is defined within a `@layer` directive. (65:5)
+
+  63 | 
+  64 |   .btn-danger {
+> 65 |     @apply bg-danger-600 hover:bg-danger-700 text-white font-medium rounded-lg px-4 py-2 transition-colors duration-200;
+     |     ^
+  66 |   }
+  67 | 
+-- inner error --
+Syntax error: /Users/juan/Proyectos/autoforge/dashboard/src/app/globals.css The `hover:bg-danger-700` class does not exist. If `hover:bg-danger-700` is a custom class, make sure it is defined within a `@layer` directive. (65:5)
+
+  63 | 
+  64 |   .btn-danger {
+> 65 |     @apply bg-danger-600 hover:bg-danger-700 text-white font-medium rounded-lg px-4 py-2 transition-colors duration-200;
+     |     ^
+  66 |   }
+  67 | 
+Generated code for /Users/juan/Proyectos/autoforge/dashboard/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!/Users/juan/Proyectos/autoforge/dashboard/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!/Users/juan/Proyectos/autoforge/dashboard/src/app/globals.css
+
+Import trace for requested module:
+./src/app/globals.css @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
+[    7182ms] [ERROR] ./src/app/globals.css:65:5
+Syntax error: /Users/juan/Proyectos/autoforge/dashboard/src/app/globals.css The `hover:bg-danger-700` class does not exist. If `hover:bg-danger-700` is a custom class, make sure it is defined within a `@layer` directive.
+
+  63 | 
+  64 |   .btn-danger {
+> 65 |     @apply bg-danger-600 hover:bg-danger-700 text-white font-medium rounded-lg px-4 py-2 transition-colors duration-200;
+     |     ^
+  66 |   }
+  67 | @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    7183ms] [ERROR] ./src/app/globals.css
+Syntax error: /Users/juan/Proyectos/autoforge/dashboard/src/app/globals.css The `hover:bg-danger-700` class does not exist. If `hover:bg-danger-700` is a custom class, make sure it is defined within a `@layer` directive. (65:5)
+
+  63 | 
+  64 |   .btn-danger {
+> 65 |     @apply bg-danger-600 hover:bg-danger-700 text-white font-medium rounded-lg px-4 py-2 transition-colors duration-200;
+     |     ^
+  66 |   }
+  67 | 
+-- inner error --
+Syntax error: /Users/juan/Proyectos/autoforge/dashboard/src/app/globals.css The `hover:bg-danger-700` class does not exist. If `hover:bg-danger-700` is a custom class, make sure it is defined within a `@layer` directive. (65:5)
+
+  63 | 
+  64 |   .btn-danger {
+> 65 |     @apply bg-danger-600 hover:bg-danger-700 text-white font-medium rounded-lg px-4 py-2 transition-colors duration-200;
+     |     ^
+  66 |   }
+  67 | 
+Generated code for /Users/juan/Proyectos/autoforge/dashboard/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!/Users/juan/Proyectos/autoforge/dashboard/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!/Users/juan/Proyectos/autoforge/dashboard/src/app/globals.css @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    7183ms] Error: Syntax error: /Users/juan/Proyectos/autoforge/dashboard/src/app/globals.css The `hover:bg-danger-700` class does not exist. If `hover:bg-danger-700` is a custom class, make sure it is defined within a `@layer` directive.
+
+  63 | 
+  64 |   .btn-danger {
+> 65 |     @apply bg-danger-600 hover:bg-danger-700 text-white font-medium rounded-lg px-4 py-2 transition-colors duration-200;
+     |     ^
+  66 |   }
+  67 | 
+
+    at getServerError (webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/nodeStackFrames.js:38:15)
+    at hydrate/< (webpack-internal:///./node_modules/next/dist/client/index.js:627:27)
+    at setTimeout handler*hydrate (webpack-internal:///./node_modules/next/dist/client/index.js:615:27)
+    at async*pageBootrap (webpack-internal:///./node_modules/next/dist/client/page-bootstrap.js:27:26)
+    at  (webpack-internal:///./node_modules/next/dist/client/next-dev.js:25:43)
+    at promise callback* (webpack-internal:///./node_modules/next/dist/client/next-dev.js:23:4)
+    at ./node_modules/next/dist/client/next-dev.js (http://localhost:3000/_next/static/chunks/fallback/main.js:820:1)
+    at options.factory (http://localhost:3000/_next/static/chunks/fallback/webpack.js:647:31)
+    at __webpack_require__ (http://localhost:3000/_next/static/chunks/fallback/webpack.js:37:33)
+    at __webpack_exec__ (http://localhost:3000/_next/static/chunks/fallback/main.js:1975:61)
+    at  (http://localhost:3000/_next/static/chunks/fallback/main.js:1976:53)
+    at webpackJsonpCallback (http://localhost:3000/_next/static/chunks/fallback/webpack.js:1195:46)
+    at  (http://localhost:3000/_next/static/chunks/fallback/main.js:9:61)
+[   18281ms] [ERROR] ./src/app/globals.css:65:5
+Syntax error: /Users/juan/Proyectos/autoforge/dashboard/src/app/globals.css The `hover:bg-danger-700` class does not exist. If `hover:bg-danger-700` is a custom class, make sure it is defined within a `@layer` directive.
+
+  63 | 
+  64 |   .btn-danger {
+> 65 |     @apply bg-danger-600 hover:bg-danger-700 text-white font-medium rounded-lg px-4 py-2 transition-colors duration-200;
+     |     ^
+  66 |   }
+  67 | @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[   18281ms] [ERROR] ./src/app/globals.css
+Syntax error: /Users/juan/Proyectos/autoforge/dashboard/src/app/globals.css The `hover:bg-danger-700` class does not exist. If `hover:bg-danger-700` is a custom class, make sure it is defined within a `@layer` directive. (65:5)
+
+  63 | 
+  64 |   .btn-danger {
+> 65 |     @apply bg-danger-600 hover:bg-danger-700 text-white font-medium rounded-lg px-4 py-2 transition-colors duration-200;
+     |     ^
+  66 |   }
+  67 | 
+-- inner error --
+Syntax error: /Users/juan/Proyectos/autoforge/dashboard/src/app/globals.css The `hover:bg-danger-700` class does not exist. If `hover:bg-danger-700` is a custom class, make sure it is defined within a `@layer` directive. (65:5)
+
+  63 | 
+  64 |   .btn-danger {
+> 65 |     @apply bg-danger-600 hover:bg-danger-700 text-white font-medium rounded-lg px-4 py-2 transition-colors duration-200;
+     |     ^
+  66 |   }
+  67 | 
+Generated code for /Users/juan/Proyectos/autoforge/dashboard/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!/Users/juan/Proyectos/autoforge/dashboard/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!/Users/juan/Proyectos/autoforge/dashboard/src/app/globals.css
+
+Import trace for requested module:
+./src/app/globals.css @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[   26345ms] [ERROR] ./src/app/globals.css:65:5
+Syntax error: /Users/juan/Proyectos/autoforge/dashboard/src/app/globals.css The `hover:bg-danger-700` class does not exist. If `hover:bg-danger-700` is a custom class, make sure it is defined within a `@layer` directive.
+
+  63 | 
+  64 |   .btn-danger {
+> 65 |     @apply bg-danger-600 hover:bg-danger-700 text-white font-medium rounded-lg px-4 py-2 transition-colors duration-200;
+     |     ^
+  66 |   }
+  67 | @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[   26346ms] [ERROR] ./src/app/globals.css
+Syntax error: /Users/juan/Proyectos/autoforge/dashboard/src/app/globals.css The `hover:bg-danger-700` class does not exist. If `hover:bg-danger-700` is a custom class, make sure it is defined within a `@layer` directive. (65:5)
+
+  63 | 
+  64 |   .btn-danger {
+> 65 |     @apply bg-danger-600 hover:bg-danger-700 text-white font-medium rounded-lg px-4 py-2 transition-colors duration-200;
+     |     ^
+  66 |   }
+  67 | 
+-- inner error --
+Syntax error: /Users/juan/Proyectos/autoforge/dashboard/src/app/globals.css The `hover:bg-danger-700` class does not exist. If `hover:bg-danger-700` is a custom class, make sure it is defined within a `@layer` directive. (65:5)
+
+  63 | 
+  64 |   .btn-danger {
+> 65 |     @apply bg-danger-600 hover:bg-danger-700 text-white font-medium rounded-lg px-4 py-2 transition-colors duration-200;
+     |     ^
+  66 |   }
+  67 | 
+Generated code for /Users/juan/Proyectos/autoforge/dashboard/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!/Users/juan/Proyectos/autoforge/dashboard/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!/Users/juan/Proyectos/autoforge/dashboard/src/app/globals.css
+
+Import trace for requested module:
+./src/app/globals.css @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
