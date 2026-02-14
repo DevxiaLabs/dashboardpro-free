@@ -1,0 +1,60 @@
+name: Deploy Kaiforge Lite
+
+on:
+  push:
+    branches: [main]
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: devxialabs/kaiforge-lite
+
+jobs:
+  build:
+    name: Build & Push Lite Image
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Log in to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: docker/setup-buildx-action@v3
+
+      - name: Build and push
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: Dockerfile
+          push: true
+          tags: |
+            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
+            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+  deploy:
+    name: Deploy to CapRover (kaiforge-lite)
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Install CapRover CLI
+        run: npm install -g caprover
+
+      - name: Deploy
+        env:
+          CAPROVER_URL: ${{ secrets.CAPROVER_URL }}
+          APP_TOKEN: ${{ secrets.CAPROVER_APP_TOKEN_LITE }}
+          IMAGE_NAME: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
+        run: |
+          caprover deploy \
+            --caproverUrl "$CAPROVER_URL" \
+            --appToken "$APP_TOKEN" \
+            --imageName "$IMAGE_NAME" \
+            --appName "kaiforge-lite"
