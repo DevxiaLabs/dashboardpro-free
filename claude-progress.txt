@@ -87,7 +87,7 @@
 - Sidebar and Header components already existed from another agent (Session 1b?)
 - Dashboard layout updated to include Sidebar + Header
 - Mock data files were fully populated (users, products, orders, analytics, etc.)
-- Auth context works with admin@dashboardpro.com / password123
+- Auth context works with admin@kaiforge.com / password123
 
 ## Current Progress: 8/158 features passing (5.1%)
 
@@ -416,7 +416,7 @@
   - Verified sidebar starts expanded at 260px with text labels visible
   - Clicked collapse button → sidebar shrinks to exactly 72px
   - Only icons visible, text labels and section headings hidden
-  - "DashBoard Pro" text hidden, only "D" logo remains
+  - "Kaiforge" text hidden, only "D" logo remains
   - Click expand button → returns to 260px with all text labels
   - Zero console errors
 
@@ -1132,7 +1132,7 @@
 ## Completed
 - Feature #103: Form fields have sensible defaults ✅
   - /register: all 4 fields empty with placeholders (John Doe, you@example.com, Min. 8 characters, Re-enter your password)
-  - /dashboard/settings: profile fields pre-filled with user data (Alex Johnson, admin@dashboardpro.com, Dashboard administrator, San Francisco, CA)
+  - /dashboard/settings: profile fields pre-filled with user data (Alex Johnson, admin@kaiforge.com, Dashboard administrator, San Francisco, CA)
   - /dashboard/settings: phone field empty with placeholder +1 (555) 000-0000 (no phone in user data)
   - /dashboard/settings: bio counter shows 23/200 characters (reflecting pre-filled bio)
   - Calendar event modal: date pre-filled with clicked date (2024-05-16), start time 09:00, end time 10:00, blue color default
@@ -1475,7 +1475,7 @@
 
 ## Completed
 - Feature #146: Direct URL to auth pages while logged in redirects to dashboard
-  - Logged in with valid credentials (admin@dashboardpro.com / password123)
+  - Logged in with valid credentials (admin@kaiforge.com / password123)
   - Navigated to /login while authenticated -> redirected to /dashboard
   - Navigated to /register while authenticated -> redirected to /dashboard
   - Navigated to /forgot-password while authenticated -> redirected to /dashboard

@@ -67,7 +67,7 @@ export default function Home() {
       <div className="relative z-10">
         {/* Nav */}
         <nav className="flex items-center justify-between max-w-6xl mx-auto px-6 py-5">
-          <h1 className="text-xl font-bold text-primary-600">DashBoard Pro</h1>
+          <h1 className="text-xl font-bold text-primary-600">Kaiforge</h1>
           <div className="flex items-center gap-3">
             <Link
               href="/login"
@@ -106,7 +106,7 @@ export default function Home() {
               Live Demo <ArrowRight className="h-5 w-5" />
             </Link>
             <a
-              href="https://github.com/DevxiaLabs/dashboardpro"
+              href="https://github.com/DevxiaLabs/kaiforge"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-6 py-3 rounded-xl border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 text-base font-medium hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
@@ -157,7 +157,7 @@ export default function Home() {
             <div className="relative z-10">
               <h3 className="text-3xl sm:text-4xl font-bold text-white mb-4">Ready to Build?</h3>
               <p className="text-white/80 text-lg mb-8 max-w-md mx-auto">
-                Get started with DashBoard Pro and ship your next project faster than ever.
+                Get started with Kaiforge and ship your next project faster than ever.
               </p>
               <Link
                 href="/register"
@@ -172,10 +172,10 @@ export default function Home() {
         {/* Footer */}
         <footer className="max-w-6xl mx-auto px-6 py-8 border-t border-gray-200 dark:border-gray-800">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-gray-500 dark:text-gray-400">
-            <p>&copy; {new Date().getFullYear()} DashBoard Pro. Built by DevxiaLabs.</p>
+            <p>&copy; {new Date().getFullYear()} Kaiforge. Built by DevxiaLabs.</p>
             <div className="flex items-center gap-6">
               <Link href="/login" className="hover:text-primary-600 transition-colors">Demo</Link>
-              <a href="https://github.com/DevxiaLabs/dashboardpro" target="_blank" rel="noopener noreferrer" className="hover:text-primary-600 transition-colors">GitHub</a>
+              <a href="https://github.com/DevxiaLabs/kaiforge" target="_blank" rel="noopener noreferrer" className="hover:text-primary-600 transition-colors">GitHub</a>
             </div>
           </div>
         </footer>

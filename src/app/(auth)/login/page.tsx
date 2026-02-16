@@ -69,7 +69,7 @@ export default function LoginPage() {
           {/* Logo */}
           <div className="mb-8">
             <h1 className="text-2xl font-bold text-primary-600">
-              DashBoard Pro
+              Kaiforge
             </h1>
             <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
               Sign in to your account to continue
@@ -108,7 +108,7 @@ export default function LoginPage() {
                     }
                   }}
                   className={`input-field pl-10 ${fieldErrors.email ? 'border-danger-500 focus:border-danger-500 focus:ring-danger-500' : ''}`}
-                  placeholder="admin@dashboardpro.com"
+                  placeholder="admin@kaiforge.com"
                   autoComplete="email"
                 />
               </div>
@@ -271,7 +271,7 @@ export default function LoginPage() {
               </svg>
             </div>
           </div>
-          <h2 className="text-3xl font-bold mb-4">Welcome to DashBoard Pro</h2>
+          <h2 className="text-3xl font-bold mb-4">Welcome to Kaiforge</h2>
           <p className="text-white/80 text-lg leading-relaxed">A premium admin dashboard template with beautiful UI components, data visualizations, and everything you need to build modern web applications.</p>
         </div>
       </AuthPanel>

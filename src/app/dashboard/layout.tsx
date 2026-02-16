@@ -7,7 +7,7 @@ import { Sidebar, Header, Breadcrumb } from "@/components/layout";
 import { CommandPalette } from "@/components/shared/CommandPalette";
 import { motion, AnimatePresence } from "framer-motion";
 
-const SIDEBAR_STORAGE_KEY = "dashboardpro:sidebar:collapsed";
+const SIDEBAR_STORAGE_KEY = "kaiforge:sidebar:collapsed";
 
 export default function DashboardLayout({
   children,

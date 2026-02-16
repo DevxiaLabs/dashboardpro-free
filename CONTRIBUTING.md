@@ -1,4 +1,4 @@
-# Contributing to DashBoard Pro Free
+# Contributing to Kaiforge Lite
 
 Thanks for your interest in contributing! Please follow these guidelines to help us keep things running smoothly.
 

@@ -1,12 +1,12 @@
-# DashBoard Pro — Free Edition
+# Kaiforge — Free Edition
 
 <p align="center">
-  <img src="https://placehold.co/1200x420?text=DashBoard+Pro+—+Free+Edition" alt="DashBoard Pro Free — Hero banner" />
+  <img src="https://placehold.co/1200x420?text=DashBoard+Pro+—+Free+Edition" alt="Kaiforge Lite — Hero banner" />
 </p>
 
 <p align="center">
   <a href="#"><img alt="Free Demo" src="https://img.shields.io/badge/Live%20Demo-Free-%2300C853?logo=vercel&logoColor=white"></a>
-  <a href="https://dashboardpro.admin.juandelvalle.com"><img alt="Pro Demo" src="https://img.shields.io/badge/Live%20Demo-Pro-%23FF6D00?logo=vercel&logoColor=white"></a>
+  <a href="https://kaiforge.admin.juandelvalle.com"><img alt="Pro Demo" src="https://img.shields.io/badge/Live%20Demo-Pro-%23FF6D00?logo=vercel&logoColor=white"></a>
   <a href="#"><img alt="Marketplace" src="https://img.shields.io/badge/Marketplace-TBD-71717a"></a>
 </p>
 
@@ -18,7 +18,7 @@
   <a href="#"><img alt="Star History" src="https://img.shields.io/badge/Star%20History-placeholder-8b5cf6"></a>
 </p>
 
-A modern, elegant dashboard template built with Next.js 14, Tailwind CSS, and TypeScript. This is the free, open‑source edition of DashBoard Pro — perfect to explore the design system, core layout, and essential components.
+A modern, elegant dashboard template built with Next.js 14, Tailwind CSS, and TypeScript. This is the free, open‑source edition of Kaiforge — perfect to explore the design system, core layout, and essential components.
 
 Upgrade to Pro to unlock 30+ production‑ready pages, 20+ advanced components, charts, and a Go backend with auth + Stripe.
 
@@ -38,7 +38,7 @@ Upgrade to Pro to unlock 30+ production‑ready pages, 20+ advanced components, 
 
 <p align="center">
   <a href="#" target="_blank"><b>Try Free Demo</b> →</a> ·
-  <a href="https://dashboardpro.admin.juandelvalle.com" target="_blank"><b>Explore Pro Demo</b> →</a> ·
+  <a href="https://kaiforge.admin.juandelvalle.com" target="_blank"><b>Explore Pro Demo</b> →</a> ·
   <a href="#" target="_blank"><b>Get Pro Version</b> →</a>
 </p>
 
@@ -92,7 +92,7 @@ npm run build
 Open http://localhost:3000 in your browser.
 
 Mock credentials (for demo screens):
-- Email: admin@dashboardpro.com
+- Email: admin@kaiforge.com
 - Password: password123
 
 ---
@@ -131,7 +131,7 @@ src/
 
 Take your app to production with 30+ pages, advanced components, charts, and a Go backend with auth + Stripe.
 
-- Live Pro Demo: https://dashboardpro.admin.juandelvalle.com
+- Live Pro Demo: https://kaiforge.admin.juandelvalle.com
 - Marketplace: #
 - Get Pro: #
 
