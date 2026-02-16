@@ -1,5 +1,5 @@
 <project_specification>
-  <project_name>DashBoard Pro</project_name>
+  <project_name>Kaiforge</project_name>
 
   <overview>
     A premium, modern and elegant dashboard template designed for sale on ThemeForest. It features public authentication pages (login, register, forgot password) and a private dashboard area with custom UI components, data visualizations, and multiple functional pages. Built with Next.js and Tailwind CSS, all data is mocked — there is no backend. The template targets developers and businesses looking for a production-ready admin dashboard starting point.

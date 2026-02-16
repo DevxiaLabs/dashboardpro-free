@@ -8,7 +8,7 @@
   <rect width="1200" height="630" fill="url(#bg)"/>
   <rect x="40" y="40" width="56" height="56" rx="12" fill="rgba(255,255,255,0.2)"/>
   <text x="68" y="78" font-family="Arial,sans-serif" font-size="32" font-weight="bold" fill="white" text-anchor="middle">D</text>
-  <text x="600" y="260" font-family="Arial,sans-serif" font-size="64" font-weight="bold" fill="white" text-anchor="middle">DashBoard Pro</text>
+  <text x="600" y="260" font-family="Arial,sans-serif" font-size="64" font-weight="bold" fill="white" text-anchor="middle">Kaiforge</text>
   <text x="600" y="320" font-family="Arial,sans-serif" font-size="28" fill="rgba(255,255,255,0.8)" text-anchor="middle">Premium Next.js Admin Dashboard Template</text>
   <text x="600" y="400" font-family="Arial,sans-serif" font-size="22" fill="rgba(255,255,255,0.6)" text-anchor="middle">30+ Pages · 20+ Components · 5 Themes · Dark Mode</text>
   <text x="600" y="440" font-family="Arial,sans-serif" font-size="22" fill="rgba(255,255,255,0.6)" text-anchor="middle">Next.js 14 · Tailwind CSS · TypeScript · Recharts</text>

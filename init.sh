@@ -2,7 +2,7 @@
 set -e
 
 echo "=================================================="
-echo "  DashBoard Pro - Development Environment Setup"
+echo "  Kaiforge - Development Environment Setup"
 echo "=================================================="
 echo ""
 
@@ -52,7 +52,7 @@ echo "  Login:       /login"
 echo "  Dashboard:   /dashboard"
 echo ""
 echo "  Mock Credentials:"
-echo "    Email:    admin@dashboardpro.com"
+echo "    Email:    admin@kaiforge.com"
 echo "    Password: password123"
 echo ""
 echo "  Press Ctrl+C to stop the server"

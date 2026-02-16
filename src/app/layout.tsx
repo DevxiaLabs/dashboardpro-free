@@ -11,7 +11,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "DashBoard Pro",
+  title: "Kaiforge",
   description:
     "A premium, modern dashboard template built with Next.js, Tailwind CSS, and TypeScript",
   icons: {

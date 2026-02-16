@@ -17,7 +17,7 @@ export const notifications: Notification[] = [
   // Today
   { id: "n1", type: "order", title: "New order received", description: "Order #1284 from Sarah Johnson — $249.00", message: "Order #1284 from Sarah Johnson — $249.00", time: "10 minutes ago", timestamp: "2026-02-12T10:00:00Z", read: false },
   { id: "n2", type: "message", title: "New message from Alex Chen", description: "Hey, I've pushed the latest changes to the repo.", message: "Hey, I've pushed the latest changes to the repo.", time: "25 minutes ago", timestamp: "2026-02-12T10:00:00Z", read: false, avatar: "AC" },
-  { id: "n3", type: "system", title: "Deployment successful", description: "dashboardpro v2.4.1 deployed to production.", message: "dashboardpro v2.4.1 deployed to production.", time: "1 hour ago", timestamp: "2026-02-12T10:00:00Z", read: false },
+  { id: "n3", type: "system", title: "Deployment successful", description: "kaiforge v2.4.1 deployed to production.", message: "kaiforge v2.4.1 deployed to production.", time: "1 hour ago", timestamp: "2026-02-12T10:00:00Z", read: false },
   { id: "n4", type: "alert", title: "High CPU usage detected", description: "Server us-east-1 reached 92% CPU utilization.", message: "Server us-east-1 reached 92% CPU utilization.", time: "2 hours ago", timestamp: "2026-02-12T10:00:00Z", read: false },
   { id: "n5", type: "user", title: "New user registered", description: "Emma Davis created an account.", message: "Emma Davis created an account.", time: "3 hours ago", timestamp: "2026-02-12T10:00:00Z", read: true, avatar: "ED" },
 

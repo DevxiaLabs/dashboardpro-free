@@ -18,7 +18,7 @@ const AuthContext = createContext<AuthContextType | undefined>(undefined);
 const MOCK_USER: User = {
   id: "1",
   name: "Alex Johnson",
-  email: "admin@dashboardpro.com",
+  email: "admin@kaiforge.com",
   avatar: "/avatars/admin.jpg",
   role: "admin",
   status: "active",
