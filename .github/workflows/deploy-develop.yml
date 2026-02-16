@@ -6,7 +6,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: devxialabs/dashboardlite
+  IMAGE_NAME: devxialabs/kaiforge-lite
 
 jobs:
   build:
@@ -59,8 +59,8 @@ jobs:
       - name: Deploy to CapRover
         env:
           CAPROVER_URL: ${{ secrets.CAPROVER_SERVER }}
-          CAPROVER_APP: dashboardlite
-          APP_TOKEN: ${{ secrets.CAPROVER_APP_TOKEN_FRONTEND }}
+          CAPROVER_APP: kaiforge-lite
+          APP_TOKEN: ${{ secrets.CAPROVER_APP_TOKEN_LITE }}
           IMAGE_NAME: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:sha-${{ needs.build.outputs.image_tag }}
         run: |
           echo "Deploying $IMAGE_NAME to $CAPROVER_APP..."
